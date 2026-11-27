@@ -1245,10 +1245,11 @@ svg.arrow-icon {
   color: var(--sky);
 }
 
-@supports (-webkit-background-clip: text) {
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
   .hero-title-serif {
     background: linear-gradient(120deg, #FFFFFF 0%, #8FD3FF 54%, #E6C37E 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 }
@@ -7544,12 +7545,14 @@ a.contact-info-icon:hover {
   margin-bottom: var(--space-3);
   background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 52%, var(--teal-dark) 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 [data-theme="dark"] .error-number {
   background: linear-gradient(135deg, #fff 0%, var(--sky) 55%, var(--gold) 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
