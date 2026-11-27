@@ -135,44 +135,68 @@
   <main>
 
     <!-- SECTION 1: BLOG HERO -->
-    <section class="hero-sm" style="background-image: url('../images/laptop-work.jpg');" aria-labelledby="blog-hero-heading">
+    <section class="hero-sm hero-sm--split" style="background-image: url('https://i.pinimg.com/736x/fa/3a/32/fa3a32827cc7fd77a07438d7ed92890e.jpg');" aria-labelledby="blog-hero-heading">
       <div class="hero-sm-overlay"></div>
-      <div class="container">
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="../index.html">Home</a>
-          <span class="breadcrumb-sep" aria-hidden="true">/</span>
-          <span class="breadcrumb-current">Blog</span>
-        </nav>
-        <div class="hero-sm-content reveal">
-          <span class="section-label section-label--gold">Career Advice &amp; Recruitment Insights</span>
-          <h1 id="blog-hero-heading" class="hero-sm-title">Insights for Better Careers and Smarter Hiring.</h1>
-          <p class="hero-sm-sub">
-            Practical guides, interview preparation strategies, and structured hiring perspectives written to help candidates present clearly and employers hire thoughtfully.
-          </p>
+      <div class="container hero-sm-split">
+        <div class="hero-sm-split-text">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html">Home</a>
+            <span class="breadcrumb-sep" aria-hidden="true">/</span>
+            <span class="breadcrumb-current">Blog</span>
+          </nav>
+          <div class="hero-sm-content reveal">
+            <span class="section-label section-label--gold">Career Advice &amp; Recruitment Insights</span>
+            <h1 id="blog-hero-heading" class="hero-sm-title">Insights for Better Careers and Smarter Hiring.</h1>
+            <p class="hero-sm-sub">
+              Practical guides, interview preparation strategies, and structured hiring perspectives written to help candidates present clearly and employers hire thoughtfully.
+            </p>
+          </div>
+        </div>
+        <div class="hero-sm-split-media reveal-right">
+          <img src="https://i.pinimg.com/736x/82/06/4c/82064cb509b73529ec80c17a5e92de03.jpg" alt="Recruitment insights and career planning resources" loading="eager" />
         </div>
       </div>
     </section>
 
     <!-- SECTION 2: FEATURED ARTICLE -->
-    <section class="section section--white" aria-labelledby="featured-heading">
+    <section class="section-sm section--white" aria-labelledby="featured-heading">
       <div class="container">
         <article class="featured-article-card reveal">
           <div class="featured-article-media">
-            <img src="../images/interview-session.jpg" alt="Team discussing interview preparation and hiring criteria in a bright office" loading="eager" />
+            <a href="blog-details.html?article=hiring-process" class="featured-article-frame" aria-label="Read featured guide: What Happens After You Apply">
+              <img src="https://i.pinimg.com/736x/fe/e5/d0/fee5d0d4f5ea6894d11094253e197714.jpg" alt="Circular 5-stage recruitment and hiring process workflow diagram" loading="eager" />
+            </a>
           </div>
           <div class="featured-article-content">
-            <span class="badge badge-blue" style="align-self: flex-start; margin-bottom: var(--space-4);">Interview Preparation</span>
-            <h2 id="featured-heading" style="font-size: clamp(1.5rem, 2.6vw, 2.15rem); margin-bottom: var(--space-4);">
-              How to Prepare for a Recruitment Interview
+            <div class="featured-article-top">
+              <span class="featured-spotlight-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                Featured Guide
+              </span>
+              <span class="badge badge-blue">Hiring Process</span>
+              <span class="featured-read-time">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                5 min read
+              </span>
+            </div>
+            <h2 id="featured-heading" class="featured-article-title">
+              <a href="blog-details.html?article=hiring-process" class="featured-article-link">What Happens After You Apply</a>
             </h2>
-            <p class="section-body" style="font-size: var(--text-sm); margin-bottom: var(--space-6);">
-              Structured preparation replaces interview nerves with clarity. Explore how researching the organisation, organizing STAR-method examples, and preparing thoughtful questions helps candidates communicate real suitability.
+            <p class="featured-article-excerpt">
+              A clear walkthrough of screening, shortlisting, interviews, and feedback — so candidates know what to expect at every stage. Learn how to prepare for each step, respond confidently to feedback, and stay engaged while hiring decisions are made.
             </p>
-            <div>
-              <a href="blog-details.html?article=interview-prep" class="btn btn-primary">
+            <ul class="featured-article-stages" aria-label="Key stages covered in this guide">
+              <li class="featured-stage-chip"><span>01</span> Screening</li>
+              <li class="featured-stage-chip"><span>02</span> Shortlisting</li>
+              <li class="featured-stage-chip"><span>03</span> Interviews</li>
+              <li class="featured-stage-chip"><span>04</span> Feedback</li>
+            </ul>
+            <div class="featured-article-action">
+              <a href="blog-details.html?article=hiring-process" class="btn btn-primary">
                 Read Article
                 <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
               </a>
+              <span class="featured-audience-note">Candidate Walkthrough</span>
             </div>
           </div>
         </article>
@@ -193,7 +217,7 @@
         <div class="grid-3">
           <article class="blog-card reveal delay-100" data-blog-category="interview">
             <a href="blog-details.html?article=interview-prep" class="blog-card-img-wrap">
-              <img src="../images/interview-session.jpg" alt="Professionals reviewing interview structure together" class="blog-card-img" loading="lazy" />
+              <img src="https://i.pinimg.com/736x/ef/b8/51/efb85106a3a727af1697ecf571ab2071.jpg" alt="Professionals reviewing interview structure together" class="blog-card-img" loading="lazy" />
               <span class="blog-card-category">Interview Preparation</span>
             </a>
             <div class="blog-card-body">
@@ -206,7 +230,7 @@
 
           <article class="blog-card reveal delay-200" data-blog-category="cv">
             <a href="blog-details.html?article=strong-cv" class="blog-card-img-wrap">
-              <img src="../images/office-consultation.jpg" alt="Close-up review of a structured CV and role brief" class="blog-card-img" loading="lazy" />
+              <img src="https://i.pinimg.com/1200x/7b/ae/05/7bae059484171714a286a5a33b3e8d06.jpg" alt="Close-up review of a structured CV and role brief" class="blog-card-img" loading="lazy" />
               <span class="blog-card-category">CV &amp; Resume Guidance</span>
             </a>
             <div class="blog-card-body">
@@ -219,7 +243,7 @@
 
           <article class="blog-card reveal delay-300" data-blog-category="insights">
             <a href="blog-details.html?article=employer-expectations" class="blog-card-img-wrap">
-              <img src="../images/professional-woman.jpg" alt="Experienced hiring executive in a modern glass office" class="blog-card-img" loading="lazy" />
+              <img src="https://i.pinimg.com/736x/20/dc/f0/20dcf0cfb0122a38d938e3c3011fb0d4.jpg" alt="Experienced hiring executive in a modern glass office" class="blog-card-img" loading="lazy" />
               <span class="blog-card-category">Recruitment Insights</span>
             </a>
             <div class="blog-card-body">
@@ -232,7 +256,7 @@
 
           <article class="blog-card reveal delay-100" data-blog-category="trends">
             <a href="blog-details.html?article=permanent-vs-contract" class="blog-card-img-wrap">
-              <img src="../images/corporate-tower.jpg" alt="Modern corporate office architecture representing diverse employment pathways" class="blog-card-img" loading="lazy" />
+              <img src="https://i.pinimg.com/1200x/0b/8b/92/0b8b9227362a7ad5f8dbfe0c62e4612a.jpg" alt="Modern corporate office architecture representing diverse employment pathways" class="blog-card-img" loading="lazy" />
               <span class="blog-card-category">Workplace Trends</span>
             </a>
             <div class="blog-card-body">
@@ -245,7 +269,7 @@
 
           <article class="blog-card reveal delay-200" data-blog-category="career">
             <a href="blog-details.html?article=job-search" class="blog-card-img-wrap">
-              <img src="../images/laptop-work.jpg" alt="Professional researching targeted roles on a laptop" class="blog-card-img" loading="lazy" />
+              <img src="https://i.pinimg.com/736x/b3/e9/1f/b3e91f2408d9cea1f583ef33ff4ebcb1.jpg" alt="Professional researching targeted roles on a laptop" class="blog-card-img" loading="lazy" />
               <span class="blog-card-category">Career Advice</span>
             </a>
             <div class="blog-card-body">
@@ -258,7 +282,7 @@
 
           <article class="blog-card reveal delay-300" data-blog-category="employer">
             <a href="blog-details.html?article=employer-planning" class="blog-card-img-wrap">
-              <img src="../images/analytics-office.jpg" alt="Workforce planning workspace with structured data review" class="blog-card-img" loading="lazy" />
+              <img src="https://i.pinimg.com/736x/a3/c8/2f/a3c82f95f6094393d596c0070c0355c9.jpg" alt="Workforce planning workspace with structured data review" class="blog-card-img" loading="lazy" />
               <span class="blog-card-category">Employer Resources</span>
             </a>
             <div class="blog-card-body">
