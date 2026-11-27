@@ -68,7 +68,7 @@ const Navbar = (() => {
     onScroll();
 
     const currentFile = window.location.pathname.split('/').pop() || 'index.html';
-    $$('.nav-link', navbar).forEach(link => {
+    $$('.nav-link, .mobile-nav-link').forEach(link => {
       const href = link.getAttribute('href') || '';
       const baseHref = href.split('#')[0];
       const baseFile = baseHref.split('/').pop() || 'index.html';
@@ -87,6 +87,32 @@ const Navbar = (() => {
 
 /* ——— MOBILE NAVIGATION DRAWER ——— */
 const MobileNav = (() => {
+  let savedScrollY = 0;
+
+  function lockScroll() {
+    savedScrollY = window.scrollY || window.pageYOffset || 0;
+    document.body.dataset.scrollLock = String(savedScrollY);
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${savedScrollY}px`;
+    document.body.style.left = '0';
+    document.body.style.right = '0';
+    document.body.style.width = '100%';
+    document.body.style.overflow = 'hidden';
+  }
+
+  function unlockScroll() {
+    const scrollTo = Number(document.body.dataset.scrollLock || savedScrollY);
+    document.body.style.position = '';
+    document.body.style.top = '';
+    document.body.style.left = '';
+    document.body.style.right = '';
+    document.body.style.width = '';
+    document.body.style.overflow = '';
+    delete document.body.dataset.scrollLock;
+    window.scrollTo(0, scrollTo);
+    savedScrollY = 0;
+  }
+
   function init() {
     const hamburger = $('#hamburger');
     const mobileNav = $('#mobileNav');
@@ -98,22 +124,27 @@ const MobileNav = (() => {
       hamburger.setAttribute('aria-expanded', 'true');
       mobileNav.classList.add('open');
       mobileNav.setAttribute('aria-hidden', 'false');
-      document.body.style.overflow = 'hidden';
+      lockScroll();
     }
 
     function close() {
+      if (!mobileNav.classList.contains('open')) return;
       hamburger.classList.remove('open');
       hamburger.setAttribute('aria-expanded', 'false');
       mobileNav.classList.remove('open');
       mobileNav.setAttribute('aria-hidden', 'true');
-      document.body.style.overflow = '';
+      unlockScroll();
     }
 
     on(hamburger, 'click', () => (mobileNav.classList.contains('open') ? close() : open()));
     on(closeBtn, 'click', close);
     on(mobileNav, 'click', e => { if (e.target === mobileNav) close(); });
+    on(mobileNav, 'touchmove', e => e.stopPropagation(), { passive: true });
     $$('.mobile-nav-link, .mobile-nav-sub a, .mobile-nav-actions a', mobileNav).forEach(link => on(link, 'click', close));
     on(document, 'keydown', e => { if (e.key === 'Escape') close(); });
+    on(window, 'resize', () => {
+      if (window.innerWidth > 1100 && mobileNav.classList.contains('open')) close();
+    });
   }
 
   return { init };

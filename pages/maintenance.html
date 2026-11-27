@@ -7,8 +7,8 @@
   <title>Scheduled Maintenance – HireBridge Recruitment</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="icon" type="image/svg+xml" href="../images/favicon.svg" />
-  <link rel="shortcut icon" href="../images/favicon.svg" />
+  <link rel="icon" type="image/svg+xml" href="../images/favicon.svg?v=2" />
+  <link rel="shortcut icon" href="../images/favicon.svg?v=2" />
   <link rel="stylesheet" href="../css/style.css" />
   <style>
     .maint-page {
@@ -109,8 +109,14 @@
     @media (max-width: 900px) {
       .maint-grid { grid-template-columns: 1fr; }
     }
+    @media (max-width: 640px) {
+      .maint-topbar { flex-wrap: wrap; gap: var(--space-4); }
+      .countdown-value { font-size: 1.75rem; }
+      .maint-vector-card { padding: var(--space-6); }
+    }
     @media (max-width: 520px) {
       .countdown-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .countdown-value { font-size: 1.55rem; }
     }
   </style>
 </head>
@@ -120,7 +126,7 @@
     <div class="maint-shell">
       <div class="maint-topbar">
         <a href="../index.html" class="nav-logo" aria-label="HireBridge Home">
-          <div class="nav-logo-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none">  <path d="M5.5 22 Q16 8.5 26.5 22" stroke="white" stroke-width="2.5" stroke-linecap="round"/>  <path d="M9 22 Q16 14 23 22" stroke="rgba(255,255,255,0.72)" stroke-width="1.8" stroke-linecap="round"/>  <line x1="4.5" y1="22.5" x2="27.5" y2="22.5" stroke="rgba(255,255,255,0.88)" stroke-width="2" stroke-linecap="round"/>  <circle cx="6.5" cy="22.5" r="1.75" fill="white"/>  <circle cx="25.5" cy="22.5" r="1.75" fill="white"/>  <circle cx="16" cy="9.2" r="2.3" fill="#D4AA62"/></svg></div>
+          <div class="nav-logo-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><rect x="6.5" y="11" width="3.8" height="14.5" rx="1.9" fill="#FFFFFF"/><rect x="21.7" y="11" width="3.8" height="14.5" rx="1.9" fill="#FFFFFF"/><path d="M8.4 18.4 C11.6 11.8 20.4 11.8 23.6 18.4" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/><line x1="12" y1="23.2" x2="20" y2="23.2" stroke="rgba(255,255,255,0.52)" stroke-width="1.6" stroke-linecap="round"/><circle cx="16" cy="7.8" r="2.4" fill="#D4AA62"/></svg></div>
           <span class="nav-brand">
             <span class="nav-logo-text">Hire<span>Bridge</span></span>
             <span class="nav-logo-tagline">Bridging Talent &amp; Opportunity</span>
@@ -137,7 +143,7 @@
       <div class="maint-grid">
         <div>
           <span class="badge badge-gold" style="margin-bottom: var(--space-4);">Scheduled Maintenance</span>
-          <h1 style="font-size: clamp(2rem, 4.4vw, 3.25rem); color: #fff; line-height: 1.1; margin-bottom: var(--space-4);">
+          <h1 style="font-size: clamp(1.6rem, 4.4vw, 3.25rem); color: #fff; line-height: 1.1; margin-bottom: var(--space-4);">
             Upgrading Our Platform to Serve You Better.
           </h1>
           <p style="font-size: var(--text-base); color: rgba(255,255,255,0.82); line-height: 1.72; max-width: 540px;">
