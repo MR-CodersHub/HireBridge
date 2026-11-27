@@ -110,7 +110,8 @@
       .maint-grid { grid-template-columns: 1fr; }
     }
     @media (max-width: 640px) {
-      .maint-topbar { flex-wrap: wrap; gap: var(--space-4); }
+      .maint-page { padding: var(--space-5) var(--space-4); }
+      .maint-topbar { gap: var(--space-3); margin-bottom: var(--space-8); }
       .countdown-value { font-size: 1.75rem; }
       .maint-vector-card { padding: var(--space-6); }
     }
@@ -133,10 +134,9 @@
           </span>
         </a>
 
-        <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <div style="display: flex; align-items: center; gap: 0.45rem; flex-shrink: 0;">
           <button class="nav-toggle-btn" type="button" data-theme-toggle title="Toggle dark/light theme" aria-label="Switch to dark mode"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
           <button class="nav-toggle-btn" type="button" data-dir-toggle title="Toggle LTR/RTL layout">RTL</button>
-          <a href="../index.html" class="btn btn-outline-white btn-sm">Back to Home</a>
         </div>
       </div>
 

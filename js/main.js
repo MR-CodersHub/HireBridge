@@ -212,7 +212,7 @@ const Toast = (() => {
     toast.innerHTML = `
       <div class="toast-icon">${icons[type] || icons.info}</div>
       <span>${message}</span>
-      <button class="toast-close" type="button" aria-label="Dismiss notification">×</button>
+      <button class="toast-close" type="button" aria-label="Dismiss notification"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
     `;
     getContainer().appendChild(toast);
     requestAnimationFrame(() => requestAnimationFrame(() => toast.classList.add('show')));
@@ -481,7 +481,7 @@ const Lightbox = (() => {
     overlay.className = 'lightbox-overlay';
     overlay.innerHTML = `
       <div class="lightbox-content">
-        <button class="lightbox-close" type="button" aria-label="Close image preview">×</button>
+        <button class="lightbox-close" type="button" aria-label="Close image preview"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
         <img src="" alt="" />
       </div>`;
     document.body.appendChild(overlay);
