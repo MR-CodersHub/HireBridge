@@ -142,94 +142,391 @@
 
   <main>
 
-    <!-- HERO -->
-    <section class="hero-sm" style="background-image: url('https://i.pinimg.com/1200x/b3/18/aa/b318aace2f92aa1c37a5b38446d6b078.jpg');" aria-labelledby="sitemap-heading">
+    <!-- SECTION 1: LUXURY SPLIT SITEMAP HERO -->
+    <section class="hero-sm hero-sm--split" style="background-image: url('https://i.pinimg.com/1200x/b3/18/aa/b318aace2f92aa1c37a5b38446d6b078.jpg');" aria-labelledby="sitemap-heading">
       <div class="hero-sm-overlay"></div>
-      <div class="container">
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="../index.html">Home</a>
-          <span class="breadcrumb-sep" aria-hidden="true">/</span>
-          <span class="breadcrumb-current">Sitemap</span>
-        </nav>
-        <div class="hero-sm-content reveal">
-          <span class="section-label section-label--gold">Website Directory</span>
-          <h1 id="sitemap-heading" class="hero-sm-title">HireBridge Sitemap</h1>
-          <p class="hero-sm-sub">
-            Structured index of every public page, service breakdown, editorial resource, enquiry portal, and policy document on HireBridge.
-          </p>
+      <div class="hero-grid-lines" aria-hidden="true"></div>
+      <div class="container hero-sm-split">
+        <div class="hero-sm-split-text">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html">Home</a>
+            <span class="breadcrumb-sep" aria-hidden="true">/</span>
+            <span class="breadcrumb-current">Sitemap</span>
+          </nav>
+          <div class="hero-sm-content reveal">
+            <span class="hero-kicker"><span class="hero-kicker-dot" aria-hidden="true"></span>Complete Navigation Index</span>
+            <h1 id="sitemap-heading" class="hero-sm-title">
+              HireBridge <span class="hero-title-serif">Site Architecture.</span>
+            </h1>
+            <p class="hero-sm-sub">
+              Structured directory connecting every public landing view, specialized staffing service, career advisory guide, enquiry workflow, and governance policy across HireBridge.
+            </p>
+            <div class="hero-ctas" style="margin-top: var(--space-7);">
+              <a href="#directory-heading" class="btn btn-teal">Browse All Routes</a>
+              <a href="contact.html" class="btn btn-gold">Open Contact Portal</a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-sm-split-media reveal-right">
+          <img src="https://i.pinimg.com/1200x/b3/18/aa/b318aace2f92aa1c37a5b38446d6b078.jpg"
+            alt="Organized modern office workspace representing HireBridge website structure and route clarity"
+            onerror="this.onerror=null;this.src='../images/analytics-office.jpg';"
+            loading="eager" />
+          <span class="hero-focus-status">
+            <span class="hero-focus-status-dot" aria-hidden="true"></span>
+            14 Pages · 6 Services · 7 Guides
+          </span>
         </div>
       </div>
     </section>
 
-    <!-- SITEMAP DIRECTORY -->
+    <!-- DIRECTORY QUICK JUMP STRIP -->
+    <section class="home-practice-bar" aria-label="Sitemap category jump links">
+      <div class="container">
+        <div class="home-practice-inner">
+          <span class="home-practice-eyebrow">Directory Categories</span>
+          <div class="home-practice-links">
+            <a href="#map-core" class="home-practice-link"><span class="home-practice-diamond" aria-hidden="true"></span>01 · Core Navigation</a>
+            <a href="#map-services" class="home-practice-link"><span class="home-practice-diamond" aria-hidden="true"></span>02 · Service Views</a>
+            <a href="#map-blog" class="home-practice-link"><span class="home-practice-diamond" aria-hidden="true"></span>03 · Career Guides</a>
+            <a href="#map-governance" class="home-practice-link"><span class="home-practice-diamond" aria-hidden="true"></span>04 · Utility &amp; Governance</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: TELEMETRY KPI STRIP, FILTER & LUXURY DIRECTORY GRID -->
     <section class="section section--white" aria-labelledby="directory-heading">
       <div class="container">
-        <header class="section-header reveal">
-          <span class="section-label">Navigation Index</span>
-          <h2 id="directory-heading" class="section-title">All Available Pages &amp; Sections</h2>
-        </header>
+        <div class="section-header-bar reveal">
+          <header class="section-header">
+            <span class="section-label">Route Architecture</span>
+            <h2 id="directory-heading" class="section-title">All Available Pages &amp; Sections</h2>
+            <p class="section-subtitle">
+              Jump directly to any destination or filter categories below to locate a specific portal quickly.
+            </p>
+          </header>
+          <a href="../index.html" class="btn btn-outline btn-sm">
+            Return to Homepage
+            <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
 
-        <div class="grid-2">
-          <!-- Primary & Brand Pages -->
-          <article class="card reveal delay-100" style="padding: var(--space-8);">
-            <span class="badge badge-blue" style="margin-bottom: var(--space-4);">01 · Core Pages</span>
-            <h3 style="font-size: var(--text-xl); margin-bottom: var(--space-4);">Primary Navigation</h3>
-            <ul class="feature-list" style="margin-top: 0;">
-              <li class="feature-list-item"><a href="../index.html"><strong>Home 1 – General Recruitment &amp; Staffing</strong></a></li>
-              <li class="feature-list-item"><a href="home2.html"><strong>Home 2 – Solutions &amp; Sector Coverage</strong></a></li>
-              <li class="feature-list-item"><a href="about.html"><strong>About Us – Agency Profile &amp; Values</strong></a></li>
-              <li class="feature-list-item"><a href="services.html"><strong>Services – Full Portfolio Overview</strong></a></li>
-              <li class="feature-list-item"><a href="services.html#candidates"><strong>For Candidates – Support &amp; Guidance</strong></a></li>
-              <li class="feature-list-item"><a href="services.html#employers"><strong>For Employers – Recruitment Support</strong></a></li>
-              <li class="feature-list-item"><a href="pricing.html"><strong>Pricing – Packages &amp; Custom Quotes</strong></a></li>
-              <li class="feature-list-item"><a href="contact.html"><strong>Contact Us – General Enquiries &amp; FAQ</strong></a></li>
-              <li class="feature-list-item"><a href="contact.html#candidates"><strong>Candidate Enquiry &amp; Resume Form</strong></a></li>
-              <li class="feature-list-item"><a href="contact.html#employers"><strong>Employer Hiring Requirement Form</strong></a></li>
-            </ul>
+        <div class="sitemap-kpi-strip reveal">
+          <div class="sitemap-kpi-card">
+            <span class="sitemap-kpi-num">14</span>
+            <span class="sitemap-kpi-title">Standalone Pages</span>
+            <span class="sitemap-kpi-desc">Home 1, Home 2, Core &amp; Legal</span>
+          </div>
+          <div class="sitemap-kpi-card">
+            <span class="sitemap-kpi-num">06</span>
+            <span class="sitemap-kpi-title">Service Deep-Dives</span>
+            <span class="sitemap-kpi-desc">Permanent, Flex &amp; Workforce</span>
+          </div>
+          <div class="sitemap-kpi-card">
+            <span class="sitemap-kpi-num">07</span>
+            <span class="sitemap-kpi-title">Editorial Playbooks</span>
+            <span class="sitemap-kpi-desc">Candidate &amp; Employer Guides</span>
+          </div>
+          <div class="sitemap-kpi-card">
+            <span class="sitemap-kpi-num">04</span>
+            <span class="sitemap-kpi-title">Governance &amp; Status</span>
+            <span class="sitemap-kpi-desc">Privacy, Terms, 404 &amp; Status</span>
+          </div>
+        </div>
+
+        <div class="sitemap-toolbar reveal" role="tablist" aria-label="Filter sitemap categories" id="sitemap-filter-bar">
+          <span class="blog-filter-label">Filter Index</span>
+          <div class="blog-filter-pills">
+            <button type="button" class="category-pill active" role="tab" aria-selected="true" data-map-filter="all">All Categories</button>
+            <button type="button" class="category-pill" role="tab" aria-selected="false" data-map-filter="core">Core &amp; Portals</button>
+            <button type="button" class="category-pill" role="tab" aria-selected="false" data-map-filter="services">Recruitment Services</button>
+            <button type="button" class="category-pill" role="tab" aria-selected="false" data-map-filter="blog">Blog &amp; Guides</button>
+            <button type="button" class="category-pill" role="tab" aria-selected="false" data-map-filter="governance">Utility &amp; Governance</button>
+          </div>
+        </div>
+
+        <div class="sitemap-grid" id="sitemap-grid">
+          <!-- Category 01: Core Navigation -->
+          <article id="map-core" class="sitemap-card sitemap-card--blue reveal delay-100" data-map-cat="core">
+            <div class="sitemap-card-head">
+              <span class="badge badge-blue">01 · Core Pages</span>
+              <span class="sitemap-card-count">10 Destinations</span>
+            </div>
+            <h3 class="sitemap-card-title">Primary Navigation &amp; Portals</h3>
+            <p class="sitemap-card-sub">Core agency overview pages, employer hiring models, and enquiry workflows.</p>
+            <div class="sitemap-link-list">
+              <a href="../index.html" class="sitemap-link">
+                <span class="sitemap-link-text">
+                  <span class="sitemap-link-name">Home 1 – General Recruitment &amp; Staffing</span>
+                  <span class="sitemap-link-path">index.html · Main Landing</span>
+                </span>
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="home2.html" class="sitemap-link">
+                <span class="sitemap-link-text">
+                  <span class="sitemap-link-name">Home 2 – Solutions &amp; Sector Coverage</span>
+                  <span class="sitemap-link-path">pages/home2.html · Practice Monograph</span>
+                </span>
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="about.html" class="sitemap-link">
+                <span class="sitemap-link-text">
+                  <span class="sitemap-link-name">About Us – Agency Profile &amp; Values</span>
+                  <span class="sitemap-link-path">pages/about.html · Philosophy</span>
+                </span>
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="services.html" class="sitemap-link">
+                <span class="sitemap-link-text">
+                  <span class="sitemap-link-name">Services – Full Portfolio Overview</span>
+                  <span class="sitemap-link-path">pages/services.html · Practice Scopes</span>
+                </span>
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="services.html#candidates" class="sitemap-link">
+                <span class="sitemap-link-text">
+                  <span class="sitemap-link-name">For Candidates – Support &amp; Guidance</span>
+                  <span class="sitemap-link-path">pages/services.html#candidates</span>
+                </span>
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="services.html#employers" class="sitemap-link">
+                <span class="sitemap-link-text">
+                  <span class="sitemap-link-name">For Employers – Recruitment Support</span>
+                  <span class="sitemap-link-path">pages/services.html#employers</span>
+                </span>
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="pricing.html" class="sitemap-link">
+                <span class="sitemap-link-text">
+                  <span class="sitemap-link-name">Pricing – Packages &amp; Custom Quotes</span>
+                  <span class="sitemap-link-path">pages/pricing.html · Commercial Models</span>
+                </span>
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="contact.html" class="sitemap-link">
+                <span class="sitemap-link-text">
+                  <span class="sitemap-link-name">Contact Us – General Enquiries &amp; FAQ</span>
+                  <span class="sitemap-link-path">pages/contact.html · Bengaluru Desk</span>
+                </span>
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="contact.html#candidates" class="sitemap-link">
+                <span class="sitemap-link-text">
+                  <span class="sitemap-link-name">Candidate Enquiry &amp; Resume Form</span>
+                  <span class="sitemap-link-path">pages/contact.html#candidates</span>
+                </span>
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="contact.html#employers" class="sitemap-link">
+                <span class="sitemap-link-text">
+                  <span class="sitemap-link-name">Employer Hiring Requirement Form</span>
+                  <span class="sitemap-link-path">pages/contact.html#employers</span>
+                </span>
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
           </article>
 
-          <!-- Service Details -->
-          <article class="card reveal delay-200" style="padding: var(--space-8);">
-            <span class="badge badge-teal" style="margin-bottom: var(--space-4);">02 · Recruitment Services</span>
-            <h3 style="font-size: var(--text-xl); margin-bottom: var(--space-4);">Service Detail Views</h3>
-            <ul class="feature-list" style="margin-top: 0;">
-              <li class="feature-list-item"><a href="service-details.html?service=permanent"><strong>Permanent Recruitment</strong></a></li>
-              <li class="feature-list-item"><a href="service-details.html?service=temporary"><strong>Temporary Staffing</strong></a></li>
-              <li class="feature-list-item"><a href="service-details.html?service=contract"><strong>Contract Staffing</strong></a></li>
-              <li class="feature-list-item"><a href="service-details.html?service=workforce"><strong>Workforce Solutions</strong></a></li>
-              <li class="feature-list-item"><a href="service-details.html?service=sourcing"><strong>Talent Sourcing</strong></a></li>
-              <li class="feature-list-item"><a href="service-details.html?service=support"><strong>Recruitment Support</strong></a></li>
-            </ul>
+          <!-- Category 02: Recruitment Services -->
+          <article id="map-services" class="sitemap-card sitemap-card--teal reveal delay-200" data-map-cat="services">
+            <div class="sitemap-card-head">
+              <span class="badge badge-teal">02 · Recruitment Services</span>
+              <span class="sitemap-card-count">6 Service Scopes</span>
+            </div>
+            <h3 class="sitemap-card-title">Service Detail Views</h3>
+            <p class="sitemap-card-sub">Specialized delivery breakdowns across permanent, contract, and support mandates.</p>
+            <div class="sitemap-link-list">
+              <a href="service-details.html?service=permanent" class="sitemap-link">
+                <span class="sitemap-link-text">
+                  <span class="sitemap-link-name">Permanent Recruitment</span>
+                  <span class="sitemap-link-path">service-details.html?service=permanent</span>
+                </span>
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="service-details.html?service=temporary" class="sitemap-link">
+                <span class="sitemap-link-text">
+                  <span class="sitemap-link-name">Temporary Staffing</span>
+                  <span class="sitemap-link-path">service-details.html?service=temporary</span>
+                </span>
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="service-details.html?service=contract" class="sitemap-link">
+                <span class="sitemap-link-text">
+                  <span class="sitemap-link-name">Contract Staffing</span>
+                  <span class="sitemap-link-path">service-details.html?service=contract</span>
+                </span>
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="service-details.html?service=workforce" class="sitemap-link">
+                <span class="sitemap-link-text">
+                  <span class="sitemap-link-name">Workforce Solutions</span>
+                  <span class="sitemap-link-path">service-details.html?service=workforce</span>
+                </span>
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="service-details.html?service=sourcing" class="sitemap-link">
+                <span class="sitemap-link-text">
+                  <span class="sitemap-link-name">Talent Sourcing</span>
+                  <span class="sitemap-link-path">service-details.html?service=sourcing</span>
+                </span>
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="service-details.html?service=support" class="sitemap-link">
+                <span class="sitemap-link-text">
+                  <span class="sitemap-link-name">Recruitment Support</span>
+                  <span class="sitemap-link-path">service-details.html?service=support</span>
+                </span>
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
           </article>
 
-          <!-- Blog & Insights -->
-          <article class="card reveal delay-100" style="padding: var(--space-8);">
-            <span class="badge badge-gold" style="margin-bottom: var(--space-4);">03 · Editorial Resources</span>
-            <h3 style="font-size: var(--text-xl); margin-bottom: var(--space-4);">Blog &amp; Career Guides</h3>
-            <ul class="feature-list" style="margin-top: 0;">
-              <li class="feature-list-item"><a href="blog.html"><strong>Blog Home – Career Advice &amp; Hiring Insights</strong></a></li>
-              <li class="feature-list-item"><a href="blog-details.html?article=hiring-process"><strong>What Happens After You Apply</strong></a></li>
-              <li class="feature-list-item"><a href="blog-details.html?article=interview-prep"><strong>How to Prepare for a Recruitment Interview</strong></a></li>
-              <li class="feature-list-item"><a href="blog-details.html?article=strong-cv"><strong>Building a Strong Professional CV</strong></a></li>
-              <li class="feature-list-item"><a href="blog-details.html?article=employer-expectations"><strong>What Employers Look for in Candidates</strong></a></li>
-              <li class="feature-list-item"><a href="blog-details.html?article=permanent-vs-contract"><strong>Permanent vs Contract Employment</strong></a></li>
-              <li class="feature-list-item"><a href="blog-details.html?article=job-search"><strong>How to Improve Your Job Search</strong></a></li>
-              <li class="feature-list-item"><a href="blog-details.html?article=employer-planning"><strong>Effective Recruitment Planning for Employers</strong></a></li>
-            </ul>
+          <!-- Category 03: Editorial Resources -->
+          <article id="map-blog" class="sitemap-card sitemap-card--gold reveal delay-100" data-map-cat="blog">
+            <div class="sitemap-card-head">
+              <span class="badge badge-gold">03 · Editorial Resources</span>
+              <span class="sitemap-card-count">8 Publications</span>
+            </div>
+            <h3 class="sitemap-card-title">Blog &amp; Career Guides</h3>
+            <p class="sitemap-card-sub">Full editorial library covering interview readiness, CV crafting, and hiring planning.</p>
+            <div class="sitemap-link-list">
+              <a href="blog.html" class="sitemap-link">
+                <span class="sitemap-link-text">
+                  <span class="sitemap-link-name">Blog Home – Career Advice &amp; Hiring Insights</span>
+                  <span class="sitemap-link-path">pages/blog.html · Editorial Hub</span>
+                </span>
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="blog-details.html?article=hiring-process" class="sitemap-link">
+                <span class="sitemap-link-text">
+                  <span class="sitemap-link-name">What Happens After You Apply</span>
+                  <span class="sitemap-link-path">blog-details.html?article=hiring-process</span>
+                </span>
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="blog-details.html?article=interview-prep" class="sitemap-link">
+                <span class="sitemap-link-text">
+                  <span class="sitemap-link-name">How to Prepare for a Recruitment Interview</span>
+                  <span class="sitemap-link-path">blog-details.html?article=interview-prep</span>
+                </span>
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="blog-details.html?article=strong-cv" class="sitemap-link">
+                <span class="sitemap-link-text">
+                  <span class="sitemap-link-name">Building a Strong Professional CV</span>
+                  <span class="sitemap-link-path">blog-details.html?article=strong-cv</span>
+                </span>
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="blog-details.html?article=employer-expectations" class="sitemap-link">
+                <span class="sitemap-link-text">
+                  <span class="sitemap-link-name">What Employers Look for in Candidates</span>
+                  <span class="sitemap-link-path">blog-details.html?article=employer-expectations</span>
+                </span>
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="blog-details.html?article=permanent-vs-contract" class="sitemap-link">
+                <span class="sitemap-link-text">
+                  <span class="sitemap-link-name">Permanent vs Contract Employment</span>
+                  <span class="sitemap-link-path">blog-details.html?article=permanent-vs-contract</span>
+                </span>
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="blog-details.html?article=job-search" class="sitemap-link">
+                <span class="sitemap-link-text">
+                  <span class="sitemap-link-name">How to Improve Your Job Search</span>
+                  <span class="sitemap-link-path">blog-details.html?article=job-search</span>
+                </span>
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="blog-details.html?article=employer-planning" class="sitemap-link">
+                <span class="sitemap-link-text">
+                  <span class="sitemap-link-name">Effective Recruitment Planning for Employers</span>
+                  <span class="sitemap-link-path">blog-details.html?article=employer-planning</span>
+                </span>
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
           </article>
 
-          <!-- Access, Legal & Utility Pages -->
-          <article class="card reveal delay-200" style="padding: var(--space-8);">
-            <span class="badge badge-blue" style="margin-bottom: var(--space-4);">04 · Utility &amp; Legal</span>
-            <h3 style="font-size: var(--text-xl); margin-bottom: var(--space-4);">Access, Status &amp; Governance</h3>
-            <ul class="feature-list" style="margin-top: 0;">
-              <li class="feature-list-item"><a href="maintenance.html"><strong>Scheduled Maintenance (With Vector Graphic &amp; Timer)</strong></a></li>
-              <li class="feature-list-item"><a href="404.html"><strong>Custom 404 Error Page</strong></a></li>
-              <li class="feature-list-item"><a href="privacy.html"><strong>Privacy Policy</strong></a></li>
-              <li class="feature-list-item"><a href="terms.html"><strong>Terms of Use</strong></a></li>
-              <li class="feature-list-item"><a href="sitemap.html"><strong>Sitemap (Current Page)</strong></a></li>
-            </ul>
+          <!-- Category 04: Utility & Legal Obsidian Card -->
+          <article id="map-governance" class="sitemap-card sitemap-card--obsidian reveal delay-200" data-map-cat="governance">
+            <div class="sitemap-card-head">
+              <span class="badge badge-gold">04 · Utility &amp; Legal</span>
+              <span class="sitemap-card-count">5 Governance Pages</span>
+            </div>
+            <h3 class="sitemap-card-title">Access, Status &amp; Governance</h3>
+            <p class="sitemap-card-sub">Data stewardship policies, usage disclosures, route recovery, and system status views.</p>
+            <div class="sitemap-link-list">
+              <a href="privacy.html" class="sitemap-link">
+                <span class="sitemap-link-text">
+                  <span class="sitemap-link-name">Privacy Policy</span>
+                  <span class="sitemap-link-path">pages/privacy.html · Local Storage &amp; Data</span>
+                </span>
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="terms.html" class="sitemap-link">
+                <span class="sitemap-link-text">
+                  <span class="sitemap-link-name">Terms of Use</span>
+                  <span class="sitemap-link-path">pages/terms.html · 7 Charter Clauses</span>
+                </span>
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="maintenance.html" class="sitemap-link">
+                <span class="sitemap-link-text">
+                  <span class="sitemap-link-name">Scheduled Maintenance (Live Countdown &amp; SVG)</span>
+                  <span class="sitemap-link-path">pages/maintenance.html · System Status</span>
+                </span>
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="404.html" class="sitemap-link">
+                <span class="sitemap-link-text">
+                  <span class="sitemap-link-name">Custom 404 Error Page</span>
+                  <span class="sitemap-link-path">pages/404.html · Route Recovery</span>
+                </span>
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="sitemap.html" class="sitemap-link">
+                <span class="sitemap-link-text">
+                  <span class="sitemap-link-name">Sitemap (Current Directory Page)</span>
+                  <span class="sitemap-link-path">pages/sitemap.html · Route Index</span>
+                </span>
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: LUXURY DIRECTORY CTA PAVILION -->
+    <section class="cta-section cta-section--navy" aria-labelledby="sitemap-cta-heading">
+      <div class="cta-geo" aria-hidden="true">
+        <svg viewBox="0 0 1200 320" fill="none" preserveAspectRatio="none">
+          <path d="M-60 280 Q300 40 600 180 Q900 320 1260 90" stroke="rgba(85,166,232,0.16)" stroke-width="2.5" />
+          <path d="M-60 310 Q320 90 620 225 Q920 360 1260 140" stroke="rgba(212,170,98,0.14)" stroke-width="2" />
+        </svg>
+      </div>
+      <div class="container">
+        <div class="cta-inner cta-pavilion reveal">
+          <span class="section-label section-label--gold">Need Direct Navigation?</span>
+          <h2 id="sitemap-cta-heading" class="cta-title">Still Searching for a <span class="hero-title-serif">Specific Resource?</span></h2>
+          <p class="cta-body">
+            Return to our main landing overview, explore specialized staffing pathways, or connect directly with our Bengaluru consulting office.
+          </p>
+          <div class="cta-actions">
+            <a href="../index.html" class="btn btn-teal btn-lg">Return to Home</a>
+            <a href="services.html" class="btn btn-white btn-lg">Explore Services</a>
+            <a href="contact.html" class="btn btn-gold btn-lg">Contact HireBridge</a>
+          </div>
+          <div class="cta-concierge-strip">
+            <a href="tel:+918000004210" class="home-concierge-link"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.59 1.21h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+91 80 0000 4210</a>
+            <a href="https://wa.me/919800004210" target="_blank" rel="noopener noreferrer" class="home-concierge-link"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"/><path d="M9 10a.5.5 0 0 0 1 0v-1a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/></svg>WhatsApp Desk</a>
+            <a href="mailto:hello@hirebridge.com" class="home-concierge-link"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>hello@hirebridge.com</a>
+            <a href="https://maps.google.com/?q=Level+6,+Prestige+Meridian,+MG+Road,+Bengaluru,+Karnataka+560001,+India" target="_blank" rel="noopener noreferrer" class="home-concierge-link"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>MG Road, Bengaluru</a>
+          </div>
         </div>
       </div>
     </section>
@@ -347,5 +644,26 @@
   <div class="toast-container" id="toastContainer"></div>
 
   <script src="../js/main.js"></script>
+  <script>
+    (function () {
+      const filterBtns = Array.from(document.querySelectorAll('#sitemap-filter-bar [data-map-filter]'));
+      const cards = Array.from(document.querySelectorAll('#sitemap-grid .sitemap-card'));
+      if (!filterBtns.length || !cards.length) return;
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const cat = btn.getAttribute('data-map-filter');
+          filterBtns.forEach(b => {
+            const active = b === btn;
+            b.classList.toggle('active', active);
+            b.setAttribute('aria-selected', active ? 'true' : 'false');
+          });
+          cards.forEach(card => {
+            const match = cat === 'all' || card.getAttribute('data-map-cat') === cat;
+            card.style.display = match ? '' : 'none';
+          });
+        });
+      });
+    })();
+  </script>
 </body>
 </html>

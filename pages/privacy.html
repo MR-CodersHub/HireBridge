@@ -142,70 +142,257 @@
 
   <main>
 
-    <!-- HERO -->
-    <section class="hero-sm" style="background-image: url('https://i.pinimg.com/736x/30/cc/f1/30ccf14ea5ecad8e4a1854f75a62e43d.jpg');" aria-labelledby="privacy-heading">
+    <!-- SECTION 1: LUXURY PRIVACY HERO -->
+    <section class="hero-sm hero-sm--split" style="background-image: url('https://i.pinimg.com/736x/30/cc/f1/30ccf14ea5ecad8e4a1854f75a62e43d.jpg');" aria-labelledby="privacy-heading">
       <div class="hero-sm-overlay"></div>
-      <div class="container">
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="../index.html">Home</a>
-          <span class="breadcrumb-sep" aria-hidden="true">/</span>
-          <span class="breadcrumb-current">Privacy Policy</span>
-        </nav>
-        <div class="hero-sm-content reveal">
-          <span class="section-label section-label--gold">Data Transparency</span>
-          <h1 id="privacy-heading" class="hero-sm-title">Privacy Policy</h1>
-          <p class="hero-sm-sub">
-            Clear disclosure of how this front-end website handles interface preferences, enquiry forms, and uploaded resume previews.
-          </p>
+      <div class="hero-grid-lines" aria-hidden="true"></div>
+      <div class="container hero-sm-split">
+        <div class="hero-sm-split-text">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html">Home</a>
+            <span class="breadcrumb-sep" aria-hidden="true">/</span>
+            <span class="breadcrumb-current">Privacy Policy</span>
+          </nav>
+          <div class="hero-sm-content reveal">
+            <span class="hero-kicker"><span class="hero-kicker-dot" aria-hidden="true"></span>Data Transparency &amp; Trust</span>
+            <h1 id="privacy-heading" class="hero-sm-title">
+              Privacy <span class="hero-title-serif">Policy &amp; Trust.</span>
+            </h1>
+            <p class="hero-sm-sub">
+              Clear disclosure explaining how HireBridge handles browser preferences, client-side enquiry validation, resume previews, and zero-cookie browsing transparency.
+            </p>
+            <div class="hero-ctas" style="margin-top: var(--space-7);">
+              <a href="#privacy-body-heading" class="btn btn-teal">Inspect Disclosures</a>
+              <a href="mailto:hello@hirebridge.com" class="btn btn-gold">Direct Privacy Desk</a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-sm-split-media reveal-right">
+          <img src="https://i.pinimg.com/736x/30/cc/f1/30ccf14ea5ecad8e4a1854f75a62e43d.jpg"
+            alt="Modern workspace interior representing data transparency and privacy stewardship"
+            onerror="this.onerror=null;this.src='../images/modern-office.jpg';"
+            loading="eager" />
+          <span class="hero-focus-status">
+            <span class="hero-focus-status-dot" aria-hidden="true"></span>
+            Zero Tracking Cookies · Local UI Control
+          </span>
         </div>
       </div>
     </section>
 
-    <!-- PRIVACY POLICY CONTENT -->
-    <section class="section section--white" aria-labelledby="privacy-body-heading">
-      <div class="container-narrow">
-        <div class="card reveal" style="padding: var(--space-10);">
-          <h2 id="privacy-body-heading" style="font-size: var(--text-2xl); margin-bottom: var(--space-6);">Privacy &amp; Data Handling Summary</h2>
-
-          <div class="auth-disclaimer" style="margin-top: 0; margin-bottom: var(--space-8);">
-            <strong>HireBridge Privacy Desk:</strong> For privacy queries or data access requests, email <a href="mailto:hello@hirebridge.com">hello@hirebridge.com</a>, call <a href="tel:+918000004210">+91 80 0000 4210</a>, or write to <a href="https://maps.google.com/?q=Level+6,+Prestige+Meridian,+MG+Road,+Bengaluru,+Karnataka+560001,+India" target="_blank" rel="noopener noreferrer">Level 6, Prestige Meridian, MG Road, Bengaluru 560001</a>.
+    <!-- PRIVACY JUMP NAVIGATION STRIP -->
+    <section class="home-practice-bar" aria-label="Privacy policy quick navigation">
+      <div class="container">
+        <div class="home-practice-inner">
+          <span class="home-practice-eyebrow">Privacy Directory</span>
+          <div class="home-practice-links">
+            <a href="#privacy-1" class="home-practice-link"><span class="home-practice-diamond" aria-hidden="true"></span>01 · Form Handling</a>
+            <a href="#privacy-2" class="home-practice-link"><span class="home-practice-diamond" aria-hidden="true"></span>02 · Browser Storage</a>
+            <a href="#privacy-3" class="home-practice-link"><span class="home-practice-diamond" aria-hidden="true"></span>03 · Backend Standards</a>
+            <a href="#privacy-5" class="home-practice-link"><span class="home-practice-diamond" aria-hidden="true"></span>05 · Data Requests</a>
+            <a href="terms.html" class="home-practice-link"><span class="home-practice-diamond" aria-hidden="true"></span>Terms of Use</a>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <div style="display: flex; flex-direction: column; gap: var(--space-7);">
-            <div>
-              <h3 style="font-size: var(--text-lg); margin-bottom: var(--space-2);">1. Front-End Form &amp; Resume Handling</h3>
-              <p class="section-body" style="font-size: var(--text-sm);">
-                In its current front-end demonstration state, HireBridge does not transmit, collect, or store personal data entered into the Candidate Enquiry form, Employer Enquiry form, or Newsletter input. Selected resume files are checked locally in your browser for file format (<code>.pdf</code>, <code>.doc</code>, <code>.docx</code>) and size only and are never uploaded to a server.
-              </p>
+    <!-- SECTION 2: PRIVACY HIGHLIGHTS & FORMAL DISCLOSURE -->
+    <section class="section section--white" aria-labelledby="privacy-body-heading">
+      <div class="container">
+
+        <div class="legal-summary-grid reveal">
+          <div class="legal-summary-card">
+            <span class="legal-summary-kicker">01 · Local Validation</span>
+            <h2 class="legal-summary-title">No Silent CV Uploads</h2>
+            <p class="legal-summary-text">
+              Enquiry details and selected resume files are verified strictly within your browser session and are never transmitted to an external server in this UI build.
+            </p>
+          </div>
+          <div class="legal-summary-card">
+            <span class="legal-summary-kicker">02 · Minimal Storage</span>
+            <h2 class="legal-summary-title">Zero Tracking Cookies</h2>
+            <p class="legal-summary-text">
+              Only non-identifying UI preference keys for light/dark theme and reading direction are stored locally — zero third-party ad profiles are ever used.
+            </p>
+          </div>
+          <div class="legal-summary-card">
+            <span class="legal-summary-kicker">03 · Direct Access Rights</span>
+            <h2 class="legal-summary-title">Bengaluru Privacy Desk</h2>
+            <p class="legal-summary-text">
+              Reach our MG Road office directly by email, telephone, or WhatsApp for any data protection questions or records enquiries.
+            </p>
+          </div>
+        </div>
+
+        <div class="legal-layout">
+          <article class="legal-doc-card reveal">
+            <div class="legal-doc-header">
+              <div>
+                <span class="section-label">Data Stewardship</span>
+                <h2 id="privacy-body-heading" style="font-size: var(--text-3xl); margin-bottom: 0;">Privacy &amp; Data Handling Summary</h2>
+              </div>
+              <span class="legal-doc-badge">Transparent Policy · 5 Clauses</span>
             </div>
 
-            <div>
-              <h3 style="font-size: var(--text-lg); margin-bottom: var(--space-2);">2. LocalStorage Browser Preferences</h3>
-              <p class="section-body" style="font-size: var(--text-sm);">
-                To preserve your viewing preferences across page loads, the site stores two non-identifying UI keys in browser <code>localStorage</code>: <code>hb_theme</code> (<code>light</code> or <code>dark</code>) and <code>hb_dir</code> (<code>ltr</code> or <code>rtl</code>). No tracking cookies or third-party advertising profiles are set by our scripts.
-              </p>
+            <div class="auth-disclaimer" style="margin-top: 0; margin-bottom: var(--space-8);">
+              <strong>HireBridge Privacy Desk:</strong> For privacy queries or data access requests, email <a href="mailto:hello@hirebridge.com">hello@hirebridge.com</a>, call <a href="tel:+918000004210">+91 80 0000 4210</a>, message on <a href="https://wa.me/919800004210" target="_blank" rel="noopener noreferrer">WhatsApp</a>, or write to <a href="https://maps.google.com/?q=Level+6,+Prestige+Meridian,+MG+Road,+Bengaluru,+Karnataka+560001,+India" target="_blank" rel="noopener noreferrer">Level 6, Prestige Meridian, MG Road, Bengaluru 560001</a>.
             </div>
 
-            <div>
-              <h3 style="font-size: var(--text-lg); margin-bottom: var(--space-2);">3. Future Backend Integration</h3>
-              <p class="section-body" style="font-size: var(--text-sm);">
-                When connected to an authorised recruitment backend, candidate CVs, contact details, and employer hiring briefs should be processed solely for recruitment coordination, candidate evaluation, and requested consultations in compliance with applicable data protection standards.
-              </p>
+            <div class="legal-clauses">
+              <div id="privacy-1" class="legal-clause">
+                <div class="legal-clause-head">
+                  <span class="legal-clause-num">Clause 01</span>
+                  <span class="legal-clause-rule" aria-hidden="true"></span>
+                </div>
+                <h3 class="legal-clause-title">1. Front-End Form &amp; Resume Handling</h3>
+                <p class="legal-clause-body">
+                  In its current front-end demonstration state, HireBridge does not transmit, collect, or store personal data entered into the Candidate Enquiry form, Employer Enquiry form, or Newsletter input. Selected resume files are checked locally in your browser for file format (<code>.pdf</code>, <code>.doc</code>, <code>.docx</code>) and size only and are never uploaded to a server.
+                </p>
+              </div>
+
+              <div id="privacy-2" class="legal-clause">
+                <div class="legal-clause-head">
+                  <span class="legal-clause-num">Clause 02</span>
+                  <span class="legal-clause-rule" aria-hidden="true"></span>
+                </div>
+                <h3 class="legal-clause-title">2. LocalStorage Browser Preferences</h3>
+                <p class="legal-clause-body">
+                  To preserve your viewing preferences across page loads, the site stores two non-identifying UI keys in browser <code>localStorage</code>: <code>hb_theme</code> (<code>light</code> or <code>dark</code>) and <code>hb_dir</code> (<code>ltr</code> or <code>rtl</code>). No tracking cookies or third-party advertising profiles are set by our scripts.
+                </p>
+                <div class="privacy-storage-grid" aria-label="Browser storage transparency summary">
+                  <div class="privacy-storage-item">
+                    <span class="privacy-storage-key">hb_theme</span>
+                    <span class="privacy-storage-scope">Remembers light or dark colour palette preference across pages.</span>
+                    <span class="privacy-storage-status">Local UI Only</span>
+                  </div>
+                  <div class="privacy-storage-item">
+                    <span class="privacy-storage-key">hb_dir</span>
+                    <span class="privacy-storage-scope">Stores LTR / RTL reading layout toggle state locally.</span>
+                    <span class="privacy-storage-status">Local UI Only</span>
+                  </div>
+                  <div class="privacy-storage-item">
+                    <span class="privacy-storage-key">Tracking Cookies</span>
+                    <span class="privacy-storage-scope">No behavioral profiling, advertising trackers, or external analytics.</span>
+                    <span class="privacy-storage-status">None Used</span>
+                  </div>
+                </div>
+              </div>
+
+              <div id="privacy-3" class="legal-clause">
+                <div class="legal-clause-head">
+                  <span class="legal-clause-num">Clause 03</span>
+                  <span class="legal-clause-rule" aria-hidden="true"></span>
+                </div>
+                <h3 class="legal-clause-title">3. Future Backend Integration</h3>
+                <p class="legal-clause-body">
+                  When connected to an authorised recruitment backend, candidate CVs, contact details, and employer hiring briefs should be processed solely for recruitment coordination, candidate evaluation, and requested consultations in compliance with applicable data protection standards.
+                </p>
+              </div>
+
+              <div id="privacy-4" class="legal-clause">
+                <div class="legal-clause-head">
+                  <span class="legal-clause-num">Clause 04</span>
+                  <span class="legal-clause-rule" aria-hidden="true"></span>
+                </div>
+                <h3 class="legal-clause-title">4. External Assets</h3>
+                <p class="legal-clause-body">
+                  Display typography is loaded from Google Fonts (<code>fonts.googleapis.com</code>), while fallback and local office photography is served directly from the local <code>images/</code> directory.
+                </p>
+              </div>
+
+              <div id="privacy-5" class="legal-clause">
+                <div class="legal-clause-head">
+                  <span class="legal-clause-num">Clause 05</span>
+                  <span class="legal-clause-rule" aria-hidden="true"></span>
+                </div>
+                <h3 class="legal-clause-title">5. Privacy Enquiries &amp; Requests</h3>
+                <p class="legal-clause-body">
+                  Individuals may request access, correction, or deletion of recruitment records through our <a href="contact.html">Contact page</a>, by emailing <a href="mailto:hello@hirebridge.com">hello@hirebridge.com</a>, messaging on <a href="https://wa.me/919800004210" target="_blank" rel="noopener noreferrer">WhatsApp</a>, or calling <a href="tel:+918000004210">+91 80 0000 4210</a>.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <aside class="legal-sidebar reveal-right">
+            <div class="article-toc-box article-toc-box--luxury">
+              <span class="article-toc-eyebrow">Policy Index</span>
+              <h4 style="font-size: var(--text-base); margin-bottom: var(--space-3);">Privacy Sections</h4>
+              <nav aria-label="Privacy policy index">
+                <a href="#privacy-1" class="article-toc-link is-active"><span class="article-toc-num">01</span><span>Form &amp; Resume Handling</span></a>
+                <a href="#privacy-2" class="article-toc-link"><span class="article-toc-num">02</span><span>LocalStorage Preferences</span></a>
+                <a href="#privacy-3" class="article-toc-link"><span class="article-toc-num">03</span><span>Future Backend Integration</span></a>
+                <a href="#privacy-4" class="article-toc-link"><span class="article-toc-num">04</span><span>External Assets</span></a>
+                <a href="#privacy-5" class="article-toc-link"><span class="article-toc-num">05</span><span>Enquiries &amp; Requests</span></a>
+              </nav>
+              <div class="legal-cross-links">
+                <span class="article-toc-eyebrow">Related Governance</span>
+                <a href="terms.html" class="legal-cross-link">
+                  <span>Terms of Use</span>
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+                <a href="sitemap.html" class="legal-cross-link">
+                  <span>Site Directory</span>
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+              </div>
             </div>
 
-            <div>
-              <h3 style="font-size: var(--text-lg); margin-bottom: var(--space-2);">4. External Assets</h3>
-              <p class="section-body" style="font-size: var(--text-sm);">
-                Typography is loaded from Google Fonts (<code>fonts.googleapis.com</code>), while site photography is served directly from the local <code>images/</code> directory.
+            <div class="legal-desk-card">
+              <span class="bd-sidebar-kicker">Bengaluru Privacy Desk</span>
+              <h4 style="color: #fff; font-size: var(--text-lg); margin-bottom: var(--space-2);">Questions on Data Privacy?</h4>
+              <p style="font-size: var(--text-sm); color: rgba(255,255,255,0.78); line-height: 1.6;">
+                Contact our governance team directly for privacy inquiries, record reviews, or security disclosures.
               </p>
+              <div class="legal-desk-list">
+                <a href="mailto:hello@hirebridge.com" class="legal-desk-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  <span>hello@hirebridge.com</span>
+                </a>
+                <a href="tel:+918000004210" class="legal-desk-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.59 1.21h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  <span>+91 80 0000 4210</span>
+                </a>
+                <a href="https://wa.me/919800004210" target="_blank" rel="noopener noreferrer" class="legal-desk-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"/><path d="M9 10a.5.5 0 0 0 1 0v-1a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/></svg>
+                  <span>WhatsApp Concierge</span>
+                </a>
+                <a href="https://maps.google.com/?q=Level+6,+Prestige+Meridian,+MG+Road,+Bengaluru,+Karnataka+560001,+India" target="_blank" rel="noopener noreferrer" class="legal-desk-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <span>Prestige Meridian, MG Road, Bengaluru</span>
+                </a>
+              </div>
+              <a href="contact.html" class="btn btn-gold w-full">Open Contact Portal</a>
             </div>
+          </aside>
+        </div>
+      </div>
+    </section>
 
-            <div>
-              <h3 style="font-size: var(--text-lg); margin-bottom: var(--space-2);">5. Privacy Enquiries &amp; Requests</h3>
-              <p class="section-body" style="font-size: var(--text-sm);">
-                Individuals may request access, correction, or deletion of recruitment records through our <a href="contact.html">Contact page</a>, by emailing <a href="mailto:hello@hirebridge.com">hello@hirebridge.com</a>, or calling <a href="tel:+918000004210">+91 80 0000 4210</a>.
-              </p>
-            </div>
+    <!-- SECTION 3: LUXURY PRIVACY CTA PAVILION -->
+    <section class="cta-section cta-section--navy" aria-labelledby="privacy-cta-heading">
+      <div class="cta-geo" aria-hidden="true">
+        <svg viewBox="0 0 1200 320" fill="none" preserveAspectRatio="none">
+          <path d="M-60 280 Q300 40 600 180 Q900 320 1260 90" stroke="rgba(85,166,232,0.16)" stroke-width="2.5" />
+          <path d="M-60 310 Q320 90 620 225 Q920 360 1260 140" stroke="rgba(212,170,98,0.14)" stroke-width="2" />
+        </svg>
+      </div>
+      <div class="container">
+        <div class="cta-inner cta-pavilion reveal">
+          <span class="section-label section-label--gold">Governance &amp; Advisory</span>
+          <h2 id="privacy-cta-heading" class="cta-title">Transparent Hiring Begins <span class="hero-title-serif">With Trust.</span></h2>
+          <p class="cta-body">
+            Review our website terms of use, explore candidate or employer services, or contact our Bengaluru advisory team directly.
+          </p>
+          <div class="cta-actions">
+            <a href="terms.html" class="btn btn-teal btn-lg">Read Terms of Use</a>
+            <a href="services.html" class="btn btn-white btn-lg">Explore Services</a>
+            <a href="contact.html" class="btn btn-gold btn-lg">Contact HireBridge</a>
+          </div>
+          <div class="cta-concierge-strip">
+            <a href="tel:+918000004210" class="home-concierge-link"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.59 1.21h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+91 80 0000 4210</a>
+            <a href="https://wa.me/919800004210" target="_blank" rel="noopener noreferrer" class="home-concierge-link"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"/><path d="M9 10a.5.5 0 0 0 1 0v-1a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/></svg>WhatsApp Desk</a>
+            <a href="mailto:hello@hirebridge.com" class="home-concierge-link"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>hello@hirebridge.com</a>
+            <a href="https://maps.google.com/?q=Level+6,+Prestige+Meridian,+MG+Road,+Bengaluru,+Karnataka+560001,+India" target="_blank" rel="noopener noreferrer" class="home-concierge-link"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>MG Road, Bengaluru</a>
           </div>
         </div>
       </div>
@@ -324,5 +511,23 @@
   <div class="toast-container" id="toastContainer"></div>
 
   <script src="../js/main.js"></script>
+  <script>
+    (function () {
+      const clauses = Array.from(document.querySelectorAll('.legal-clause'));
+      const tocLinks = Array.from(document.querySelectorAll('.legal-sidebar .article-toc-link'));
+      if (!clauses.length || !tocLinks.length) return;
+      const syncActive = () => {
+        let currentId = clauses[0].id;
+        for (const c of clauses) {
+          if (c.getBoundingClientRect().top <= 165) currentId = c.id;
+        }
+        tocLinks.forEach(link => {
+          link.classList.toggle('is-active', link.getAttribute('href') === `#${currentId}`);
+        });
+      };
+      window.addEventListener('scroll', syncActive, { passive: true });
+      syncActive();
+    })();
+  </script>
 </body>
 </html>

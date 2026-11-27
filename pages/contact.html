@@ -142,9 +142,10 @@
 
   <main>
 
-    <!-- SECTION 1: CONTACT HERO -->
+    <!-- SECTION 1: LUXURY CONTACT HERO -->
     <section class="hero-sm hero-sm--split" style="background-image: url('https://i.pinimg.com/736x/37/b8/69/37b86959ba823a2d8c06b1eb8ba76f5c.jpg');" aria-labelledby="contact-hero-heading">
       <div class="hero-sm-overlay"></div>
+      <div class="hero-grid-lines" aria-hidden="true"></div>
       <div class="container hero-sm-split">
         <div class="hero-sm-split-text">
           <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -153,15 +154,42 @@
             <span class="breadcrumb-current">Contact Us</span>
           </nav>
           <div class="hero-sm-content reveal">
-            <span class="section-label section-label--gold">Recruitment &amp; Staffing Enquiries</span>
-            <h1 id="contact-hero-heading" class="hero-sm-title">Let's Start the Right Professional Connection.</h1>
+            <span class="hero-kicker"><span class="hero-kicker-dot" aria-hidden="true"></span>Recruitment &amp; Staffing Enquiries</span>
+            <h1 id="contact-hero-heading" class="hero-sm-title">
+              Let's Start the Right <span class="hero-title-serif">Professional Connection.</span>
+            </h1>
             <p class="hero-sm-sub">
-              Whether you are exploring upcoming opportunities as a candidate or outlining a hiring brief as an employer, select your enquiry pathway below.
+              Whether you are exploring upcoming opportunities as a candidate or outlining a hiring brief as an employer, reach our Bengaluru advisory desk directly or choose your pathway below.
             </p>
+            <div class="hero-ctas" style="margin-top: var(--space-7);">
+              <a href="#candidates" class="btn btn-teal">Candidate Pathway</a>
+              <a href="#employers" class="btn btn-gold">Employer Brief</a>
+            </div>
           </div>
         </div>
         <div class="hero-sm-split-media reveal-right">
-          <img src="https://i.pinimg.com/736x/d4/f1/51/d4f151874f1270be1f1c7c55d9f0c3f1.jpg" alt="Recruitment team connecting with candidates and employers" loading="eager" />
+          <img src="https://i.pinimg.com/736x/d4/f1/51/d4f151874f1270be1f1c7c55d9f0c3f1.jpg"
+            alt="Recruitment team connecting with candidates and employers"
+            onerror="this.onerror=null;this.src='../images/office-consultation.jpg';"
+            loading="eager" />
+          <span class="hero-focus-status">
+            <span class="hero-focus-status-dot" aria-hidden="true"></span>
+            Bengaluru Desk · Mon–Fri 9:30–6:30 IST
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT PATHWAY JUMP BAR -->
+    <section class="home-practice-bar" aria-label="Contact sections navigation">
+      <div class="container">
+        <div class="home-practice-inner">
+          <span class="home-practice-eyebrow">Direct Channels</span>
+          <div class="home-practice-links">
+            <a href="#contact-info-heading" class="home-practice-link"><span class="home-practice-diamond" aria-hidden="true"></span>Office &amp; Socials</a>
+            <a href="#enquiry-type-heading" class="home-practice-link"><span class="home-practice-diamond" aria-hidden="true"></span>Candidate &amp; Employer Forms</a>
+            <a href="#faq-heading" class="home-practice-link"><span class="home-practice-diamond" aria-hidden="true"></span>Common Enquiries &amp; Map</a>
+          </div>
         </div>
       </div>
     </section>
@@ -173,7 +201,7 @@
           <span class="section-label">Contact Details</span>
           <h2 id="contact-info-heading" class="section-title" style="font-size: var(--text-3xl);">Reach the HireBridge Team</h2>
           <p class="section-subtitle" style="font-size: var(--text-sm);">
-            Connect directly with our Bengaluru recruitment desk by phone, email, or the enquiry form below.
+            Connect directly with our Bengaluru recruitment desk by phone, WhatsApp, email, or the interactive pathway forms below.
           </p>
         </header>
 
@@ -238,7 +266,7 @@
           <span class="section-label">Enquiry Type Selection</span>
           <h2 id="enquiry-type-heading" class="section-title" style="font-size: var(--text-3xl);">How Can We Assist You?</h2>
           <p class="section-subtitle" style="font-size: var(--text-base);">
-            Select your profile below to display the matching Candidate or Employer enquiry fields.
+            Select your profile below to display the tailored Candidate or Employer intake workflow.
           </p>
         </header>
 
@@ -248,6 +276,7 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
             </div>
             <div>
+              <span class="enquiry-choice-kicker">Pathway 01 · Candidates</span>
               <strong style="display: block; font-size: var(--text-lg); color: var(--text-primary); margin-bottom: 0.25rem;">I am a Candidate</strong>
               <span style="display: block; font-size: var(--text-sm); color: var(--text-muted);">Share your career preferences, role interests, and resume for upcoming opportunities.</span>
             </div>
@@ -258,6 +287,7 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
             </div>
             <div>
+              <span class="enquiry-choice-kicker" style="color: var(--blue);">Pathway 02 · Employers</span>
               <strong style="display: block; font-size: var(--text-lg); color: var(--text-primary); margin-bottom: 0.25rem;">I am an Employer</strong>
               <span style="display: block; font-size: var(--text-sm); color: var(--text-muted);">Outline your open positions, staffing format, and expected hiring timeline.</span>
             </div>
@@ -269,12 +299,14 @@
     <!-- SECTION 4: CANDIDATE ENQUIRY FORM -->
     <section id="candidates" class="section section--white" data-contact-form="candidate" aria-labelledby="cand-form-heading">
       <div class="container">
-        <div class="form-card reveal">
-          <span class="badge badge-teal" style="margin-bottom: var(--space-3);">Candidate Enquiry</span>
-          <h2 id="cand-form-heading" style="font-size: var(--text-3xl); margin-bottom: var(--space-2);">Candidate Application &amp; Career Support</h2>
-          <p class="section-body" style="font-size: var(--text-sm); margin-bottom: var(--space-8);">
-            Complete the fields below to preview your candidate enquiry submission. Front-end demonstration only — enquiries are not stored or transmitted without backend integration.
-          </p>
+        <div class="form-card form-card--luxury form-card--candidate reveal">
+          <div class="form-card-head">
+            <span class="badge badge-teal" style="margin-bottom: var(--space-3);">Candidate Enquiry</span>
+            <h2 id="cand-form-heading" style="font-size: var(--text-3xl); margin-bottom: var(--space-2);">Candidate Application &amp; Career Support</h2>
+            <p class="section-body" style="font-size: var(--text-sm);">
+              Complete the fields below to preview your candidate enquiry submission. Front-end demonstration only — enquiries are not stored or transmitted without backend integration.
+            </p>
+          </div>
 
           <form data-validate novalidate data-success-msg="Candidate enquiry validated (front-end demonstration only). Submissions are not sent or stored without backend integration.">
             <div data-form-status></div>
@@ -391,12 +423,14 @@
     <!-- SECTION 5: EMPLOYER ENQUIRY FORM -->
     <section id="employers" class="section section--white d-none" data-contact-form="employer" aria-labelledby="emp-form-heading">
       <div class="container">
-        <div class="form-card reveal">
-          <span class="badge badge-blue" style="margin-bottom: var(--space-3);">Employer Enquiry</span>
-          <h2 id="emp-form-heading" style="font-size: var(--text-3xl); margin-bottom: var(--space-2);">Discuss a Hiring or Staffing Requirement</h2>
-          <p class="section-body" style="font-size: var(--text-sm); margin-bottom: var(--space-8);">
-            Outline your team requirements below. Front-end demonstration only — enquiries are not transmitted or stored without backend integration.
-          </p>
+        <div class="form-card form-card--luxury form-card--employer reveal">
+          <div class="form-card-head">
+            <span class="badge badge-blue" style="margin-bottom: var(--space-3);">Employer Enquiry</span>
+            <h2 id="emp-form-heading" style="font-size: var(--text-3xl); margin-bottom: var(--space-2);">Discuss a Hiring or Staffing Requirement</h2>
+            <p class="section-body" style="font-size: var(--text-sm);">
+              Outline your team requirements below. Front-end demonstration only — enquiries are not transmitted or stored without backend integration.
+            </p>
+          </div>
 
           <form data-validate novalidate data-success-msg="Employer enquiry validated (front-end demonstration only). Enquiries are not delivered without backend integration.">
             <div data-form-status></div>
@@ -625,10 +659,11 @@
               </div>
             </div>
 
-            <div class="card" style="padding: var(--space-6); margin-top: var(--space-6); background: var(--surface-dark); color: #fff;">
+            <div class="card support-pavilion-card">
+              <span class="mv-card-kicker" style="display: block; margin-bottom: var(--space-2);">Bengaluru Concierge Desk</span>
               <h4 style="color: #fff; font-size: var(--text-lg); margin-bottom: var(--space-2);">Need Direct Support?</h4>
-              <p style="font-size: var(--text-sm); color: rgba(255,255,255,0.75); margin-bottom: var(--space-4);">
-                Review service scopes or explore flexible recruitment options before reaching out.
+              <p style="font-size: var(--text-sm); color: rgba(255,255,255,0.78); margin-bottom: var(--space-5);">
+                Reach our MG Road consultancy desk immediately via phone, WhatsApp, or email.
               </p>
               <div style="display: flex; flex-wrap: wrap; gap: var(--space-3);">
                 <a href="tel:+918000004210" class="btn btn-teal btn-sm">Call Office</a>

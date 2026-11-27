@@ -10,121 +10,11 @@
   <link rel="icon" type="image/svg+xml" href="../images/favicon.svg?v=2" />
   <link rel="shortcut icon" href="../images/favicon.svg?v=2" />
   <link rel="stylesheet" href="../css/style.css" />
-  <style>
-    .maint-page {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      background: radial-gradient(circle at 20% 20%, rgba(40, 100, 180, 0.35) 0%, transparent 48%),
-                  radial-gradient(circle at 82% 78%, rgba(53, 166, 154, 0.28) 0%, transparent 45%),
-                  linear-gradient(145deg, rgba(13, 26, 48, 0.94) 0%, rgba(23, 43, 77, 0.88) 54%, rgba(26, 58, 104, 0.82) 100%),
-                  url('https://i.pinimg.com/1200x/e2/3a/f8/e23af87ded724572f287f97824d53914.jpg') center / cover no-repeat;
-      color: #fff;
-      padding: var(--space-8) var(--space-6);
-      position: relative;
-      overflow: hidden;
-    }
-    .maint-shell {
-      position: relative;
-      z-index: 2;
-      max-width: 980px;
-      width: 100%;
-      margin-inline: auto;
-    }
-    .maint-topbar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: var(--space-10);
-    }
-    .maint-grid {
-      display: grid;
-      grid-template-columns: 1.08fr 0.92fr;
-      gap: var(--space-10);
-      align-items: center;
-    }
-    .countdown-grid {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: var(--space-3);
-      margin-block: var(--space-7);
-    }
-    .countdown-box {
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      backdrop-filter: blur(12px);
-      border-radius: var(--radius-xl);
-      padding: var(--space-5) var(--space-3);
-      text-align: center;
-    }
-    .countdown-value {
-      display: block;
-      font-family: var(--font-display);
-      font-size: clamp(1.75rem, 4vw, 2.65rem);
-      font-weight: 800;
-      line-height: 1;
-      font-variant-numeric: tabular-nums;
-      color: #fff;
-      margin-bottom: 0.35rem;
-    }
-    .countdown-label {
-      display: block;
-      font-size: 0.7rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--sky);
-    }
-    .maint-vector-card {
-      background: rgba(255, 255, 255, 0.06);
-      border: 1px solid rgba(255, 255, 255, 0.14);
-      border-radius: var(--radius-2xl);
-      padding: var(--space-8);
-      backdrop-filter: blur(14px);
-      text-align: center;
-    }
-    .gear-spin {
-      transform-origin: 292px 92px;
-      animation: maintSpin 18s linear infinite;
-    }
-    .gear-spin-reverse {
-      transform-origin: 332px 128px;
-      animation: maintSpinReverse 12s linear infinite;
-    }
-    .pulse-node {
-      animation: maintPulse 2.6s ease-in-out infinite;
-    }
-    @keyframes maintSpin {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
-    }
-    @keyframes maintSpinReverse {
-      from { transform: rotate(360deg); }
-      to { transform: rotate(0deg); }
-    }
-    @keyframes maintPulse {
-      0%, 100% { opacity: 0.9; transform: scale(1); }
-      50% { opacity: 0.45; transform: scale(1.12); }
-    }
-    @media (max-width: 900px) {
-      .maint-grid { grid-template-columns: 1fr; }
-    }
-    @media (max-width: 640px) {
-      .maint-page { padding: var(--space-5) var(--space-4); }
-      .maint-topbar { gap: var(--space-3); margin-bottom: var(--space-8); }
-      .countdown-value { font-size: 1.75rem; }
-      .maint-vector-card { padding: var(--space-6); }
-    }
-    @media (max-width: 520px) {
-      .countdown-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .countdown-value { font-size: 1.55rem; }
-    }
-  </style>
 </head>
 <body>
 
   <main class="maint-page">
+    <div class="hero-grid-lines" aria-hidden="true"></div>
     <div class="maint-shell">
       <div class="maint-topbar">
         <a href="../index.html" class="nav-logo" aria-label="HireBridge Home">
@@ -135,7 +25,11 @@
           </span>
         </a>
 
-        <div style="display: flex; align-items: center; gap: 0.45rem; flex-shrink: 0;">
+        <div class="maint-topbar-right">
+          <span class="maint-live-badge">
+            <span class="hero-focus-status-dot" aria-hidden="true"></span>
+            Calibration Window Active
+          </span>
           <button class="nav-toggle-btn" type="button" data-theme-toggle title="Toggle dark/light theme" aria-label="Switch to dark mode"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
           <button class="nav-toggle-btn" type="button" data-dir-toggle title="Toggle LTR/RTL layout">RTL</button>
         </div>
@@ -143,12 +37,12 @@
 
       <div class="maint-grid">
         <div>
-          <span class="badge badge-gold" style="margin-bottom: var(--space-4);">Scheduled Maintenance</span>
-          <h1 style="font-size: clamp(1.6rem, 4.4vw, 3.25rem); color: #fff; line-height: 1.1; margin-bottom: var(--space-4);">
-            Upgrading Our Platform to Serve You Better.
+          <span class="hero-kicker"><span class="hero-kicker-dot" aria-hidden="true"></span>Scheduled Platform Upgrade</span>
+          <h1 class="maint-title">
+            Upgrading Our Platform <span class="hero-title-serif">to Serve You Better.</span>
           </h1>
-          <p style="font-size: var(--text-base); color: rgba(255,255,255,0.82); line-height: 1.72; max-width: 540px;">
-            HireBridge is performing scheduled improvements to enhance reliability, speed, and recruitment enquiry workflows. Core services will return shortly.
+          <p class="maint-lead">
+            HireBridge is performing scheduled enhancements to strengthen speed, reliability, and recruitment coordination workflows. Advisory consultants remain available across all direct channels.
           </p>
 
           <!-- Live Countdown Timer -->
@@ -172,10 +66,10 @@
           </div>
 
           <!-- Optional Notification Form -->
-          <div style="background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.16); border-radius: var(--radius-xl); padding: var(--space-5); margin-bottom: var(--space-6);">
-            <p style="font-size: var(--text-sm); font-weight: 600; color: #fff; margin-bottom: 0.35rem;">Get notified when maintenance finishes (Optional)</p>
-            <p style="font-size: var(--text-xs); color: rgba(255,255,255,0.65); margin-bottom: var(--space-4);">
-              Front-end demonstration only — email inputs are validated locally without backend storage.
+          <div class="maint-notify-card">
+            <p class="maint-notify-title">Get Notified When Upgrades Complete (Optional)</p>
+            <p class="maint-notify-sub">
+              Front-end UI demonstration — email addresses are validated locally in-browser without backend persistence.
             </p>
             <form class="newsletter-form">
               <input type="email" class="newsletter-input" placeholder="Enter your email address" required aria-label="Email address for maintenance completion notice" />
@@ -183,21 +77,37 @@
             </form>
           </div>
 
-          <div style="display: flex; flex-wrap: wrap; gap: var(--space-3);">
+          <div class="maint-actions">
             <a href="../index.html" class="btn btn-white">Return to Home</a>
             <a href="contact.html" class="btn btn-teal">Contact Enquiries</a>
             <a href="sitemap.html" class="btn btn-outline-white">View Sitemap</a>
           </div>
-          <div class="standalone-contact-bar" style="justify-content: flex-start;">
-            <a href="tel:+918000004210" class="standalone-contact-link standalone-contact-link--light"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.59 1.21h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+91 80 0000 4210</a>
-            <a href="https://wa.me/919800004210" target="_blank" rel="noopener noreferrer" class="standalone-contact-link standalone-contact-link--light"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" aria-hidden="true"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"/><path d="M9 10a.5.5 0 0 0 1 0v-1a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/></svg>WhatsApp</a>
-            <a href="mailto:hello@hirebridge.com" class="standalone-contact-link standalone-contact-link--light"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>hello@hirebridge.com</a>
+
+          <div class="maint-footer-bar">
+            <div class="standalone-contact-bar">
+              <a href="tel:+918000004210" class="standalone-contact-link standalone-contact-link--light"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.59 1.21h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+91 80 0000 4210</a>
+              <a href="https://wa.me/919800004210" target="_blank" rel="noopener noreferrer" class="standalone-contact-link standalone-contact-link--light"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" aria-hidden="true"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"/><path d="M9 10a.5.5 0 0 0 1 0v-1a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/></svg>WhatsApp</a>
+              <a href="mailto:hello@hirebridge.com" class="standalone-contact-link standalone-contact-link--light"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>hello@hirebridge.com</a>
+              <a href="https://maps.google.com/?q=Level+6,+Prestige+Meridian,+MG+Road,+Bengaluru,+Karnataka+560001,+India" target="_blank" rel="noopener noreferrer" class="standalone-contact-link standalone-contact-link--light"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>MG Road, Bengaluru</a>
+            </div>
+            <div class="maint-social" aria-label="HireBridge social links">
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="HireBridge on LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+              <a href="https://x.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="HireBridge on X" title="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="HireBridge on Facebook" title="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="HireBridge on Instagram" title="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+              <a href="https://wa.me/919800004210" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Chat with HireBridge on WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"/><path d="M9 10a.5.5 0 0 0 1 0v-1a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/></svg></a>
+            </div>
           </div>
         </div>
 
-        <!-- Custom Vector SVG Maintenance Illustration -->
-        <aside class="maint-vector-card" aria-label="Bridge engineering maintenance vector illustration">
-          <svg viewBox="0 0 400 320" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Geometric bridge and calibration gears illustration">
+        <!-- Architectural Telemetry & Bridge Status Pavilion -->
+        <aside class="maint-vector-card" aria-label="Bridge engineering maintenance vector illustration and subsystem status">
+          <div class="maint-vector-head">
+            <span class="maint-vector-eyebrow">System Telemetry</span>
+            <span class="maint-vector-tag">Bengaluru Operations Node</span>
+          </div>
+
+          <svg viewBox="0 0 400 305" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Geometric bridge and calibration gears illustration">
             <defs>
               <linearGradient id="maintBridgeGrad" x1="0" y1="0" x2="1" y2="0">
                 <stop offset="0%" stop-color="#55A6E8" />
@@ -212,13 +122,13 @@
 
             <!-- Background Blueprint Grid -->
             <g stroke="rgba(255,255,255,0.07)" stroke-width="1">
-              <line x1="20" y1="60" x2="380" y2="60" />
-              <line x1="20" y1="120" x2="380" y2="120" />
-              <line x1="20" y1="180" x2="380" y2="180" />
-              <line x1="20" y1="240" x2="380" y2="240" />
-              <line x1="80" y1="20" x2="80" y2="280" />
-              <line x1="200" y1="20" x2="200" y2="280" />
-              <line x1="320" y1="20" x2="320" y2="280" />
+              <line x1="20" y1="50" x2="380" y2="50" />
+              <line x1="20" y1="110" x2="380" y2="110" />
+              <line x1="20" y1="170" x2="380" y2="170" />
+              <line x1="20" y1="230" x2="380" y2="230" />
+              <line x1="80" y1="20" x2="80" y2="270" />
+              <line x1="200" y1="20" x2="200" y2="270" />
+              <line x1="320" y1="20" x2="320" y2="270" />
             </g>
 
             <!-- Animated Calibration Gear 1 -->
@@ -236,36 +146,51 @@
             </g>
 
             <!-- Bridge Pillars & Suspension Cables -->
-            <rect x="92" y="106" width="12" height="140" rx="4" fill="rgba(255,255,255,0.22)" stroke="#55A6E8" stroke-width="1.5" />
-            <rect x="296" y="138" width="12" height="108" rx="4" fill="rgba(255,255,255,0.22)" stroke="#35A69A" stroke-width="1.5" />
+            <rect x="92" y="106" width="12" height="134" rx="4" fill="rgba(255,255,255,0.22)" stroke="#55A6E8" stroke-width="1.5" />
+            <rect x="296" y="138" width="12" height="102" rx="4" fill="rgba(255,255,255,0.22)" stroke="#35A69A" stroke-width="1.5" />
 
             <!-- Suspension Arc -->
-            <path d="M36 226 Q98 110 200 176 Q280 228 364 146" stroke="url(#maintBridgeGrad)" stroke-width="4" fill="none" stroke-linecap="round" />
-            <path d="M36 226 H364" stroke="rgba(255,255,255,0.55)" stroke-width="3" stroke-linecap="round" />
-            <path d="M36 226 H364 V266 H36 Z" fill="url(#maintDeckGrad)" />
+            <path d="M36 220 Q98 104 200 170 Q280 222 364 140" stroke="url(#maintBridgeGrad)" stroke-width="4" fill="none" stroke-linecap="round" />
+            <path d="M36 220 H364" stroke="rgba(255,255,255,0.55)" stroke-width="3" stroke-linecap="round" />
+            <path d="M36 220 H364 V258 H36 Z" fill="url(#maintDeckGrad)" />
 
             <!-- Vertical Cable Ties -->
             <g stroke="rgba(255,255,255,0.35)" stroke-width="1.5" stroke-dasharray="3 3">
-              <line x1="130" y1="146" x2="130" y2="226" />
-              <line x1="165" y1="158" x2="165" y2="226" />
-              <line x1="200" y1="176" x2="200" y2="226" />
-              <line x1="235" y1="186" x2="235" y2="226" />
-              <line x1="270" y1="182" x2="270" y2="226" />
+              <line x1="130" y1="142" x2="130" y2="220" />
+              <line x1="165" y1="154" x2="165" y2="220" />
+              <line x1="200" y1="170" x2="200" y2="220" />
+              <line x1="235" y1="180" x2="235" y2="220" />
+              <line x1="270" y1="176" x2="270" y2="220" />
             </g>
 
             <!-- Active Status Nodes -->
             <circle class="pulse-node" cx="98" cy="106" r="7" fill="#55A6E8" />
-            <circle cx="200" cy="176" r="7" fill="#D4AA62" />
+            <circle cx="200" cy="170" r="7" fill="#D4AA62" />
             <circle cx="302" cy="138" r="6" fill="#35A69A" />
 
             <!-- Status Pill Inside Graphic -->
-            <rect x="96" y="256" width="208" height="34" rx="17" fill="rgba(15,30,56,0.85)" stroke="rgba(85,166,232,0.45)" />
-            <circle cx="118" cy="273" r="4.5" fill="#35A69A" />
-            <text x="132" y="277" fill="#FAFBFD" font-family="Inter, sans-serif" font-size="11.5" font-weight="600">System Calibration Active</text>
+            <rect x="92" y="254" width="216" height="34" rx="17" fill="rgba(15,30,56,0.88)" stroke="rgba(212,170,98,0.45)" />
+            <circle cx="114" cy="271" r="4.5" fill="#D4AA62" />
+            <text x="128" y="275" fill="#FAFBFD" font-family="Inter, sans-serif" font-size="11.5" font-weight="600">Infrastructure Upgrade Active</text>
           </svg>
 
-          <p style="font-size: var(--text-xs); color: rgba(255,255,255,0.68); margin-top: var(--space-4); line-height: 1.6;">
-            All recruitment enquiries and career pages remain accessible via our navigation links.
+          <div class="maint-status-list" aria-label="Subsystem operational availability">
+            <div class="maint-status-row">
+              <span class="maint-status-name">Career Guides &amp; Editorial Hub</span>
+              <span class="maint-status-pill"><span class="maint-status-dot" aria-hidden="true"></span>Accessible</span>
+            </div>
+            <div class="maint-status-row">
+              <span class="maint-status-name">Direct Advisory Desk (Email &amp; Call)</span>
+              <span class="maint-status-pill"><span class="maint-status-dot" aria-hidden="true"></span>Online</span>
+            </div>
+            <div class="maint-status-row">
+              <span class="maint-status-name">Enquiry Workflows &amp; Core Cache</span>
+              <span class="maint-status-pill maint-status-pill--gold"><span class="maint-status-dot" aria-hidden="true"></span>Calibrating</span>
+            </div>
+          </div>
+
+          <p class="maint-vector-note">
+            All candidate and employer enquiries remain monitored during upgrades by our MG Road, Bengaluru consulting desk.
           </p>
         </aside>
       </div>

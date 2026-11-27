@@ -145,34 +145,35 @@
 
   <main>
 
-    <!-- SECTION 1: HERO -->
+    <!-- SECTION 1: EXECUTIVE HERO -->
     <section class="hero" aria-labelledby="hero-heading">
       <div class="hero-bg">
         <img src="https://i.pinimg.com/736x/9f/1b/3c/9f1b3cc7a89f92825b2850ba1f57b33f.jpg"
           alt="Recruitment consultant meeting with a professional candidate by a sunlit office window"
+          onerror="this.onerror=null;this.src='images/modern-office.jpg';"
           loading="eager" />
         <div class="hero-overlay"></div>
+        <div class="hero-grid-lines" aria-hidden="true"></div>
         <div class="hero-geo" aria-hidden="true">
           <svg viewBox="0 0 1440 260" fill="none" preserveAspectRatio="none">
             <path d="M0 240 Q360 70 720 190 Q1080 310 1440 120" stroke="rgba(255,255,255,0.12)" stroke-width="2" />
             <path d="M0 250 Q380 110 740 215 Q1100 320 1440 155" stroke="rgba(85,166,232,0.16)" stroke-width="1.5" />
-            <path d="M120 260 Q480 130 840 220 Q1140 290 1440 190" stroke="rgba(53,166,154,0.18)" stroke-width="1.5" />
+            <path d="M120 260 Q480 130 840 220 Q1140 290 1440 190" stroke="rgba(212,170,98,0.18)" stroke-width="1.5" />
           </svg>
         </div>
       </div>
 
       <div class="container hero-content">
         <div class="reveal">
-          <span class="section-label section-label--gold">Recruitment &amp; Staffing Consultancy</span>
+          <span class="hero-kicker"><span class="hero-kicker-dot" aria-hidden="true"></span>Recruitment &amp; Staffing Consultancy</span>
           <h1 id="hero-heading" class="hero-title">
             The Right Talent.<br />
             The Right Opportunity.<br />
-            <span class="text-sky">The Right Connection.</span>
+            <span class="hero-title-serif">The Right Connection.</span>
           </h1>
           <p class="hero-subtitle">
-            HireBridge is a dedicated recruitment and staffing partner connecting capable professionals with
-            organisations ready to grow. We bring structure, transparency, and personal attention to every hiring and
-            career journey.
+            HireBridge is an advisory-led recruitment and staffing partner connecting capable professionals with
+            organisations ready to grow—combining bespoke shortlisting, clarity, and attentive personal guidance at every stage.
           </p>
           <div class="hero-ctas">
             <a href="pages/contact.html#candidates" class="btn btn-teal btn-lg">
@@ -182,15 +183,28 @@
                 <polyline points="12 5 19 12 12 19" />
               </svg>
             </a>
-            <a href="pages/contact.html#employers" class="btn btn-white btn-lg">
+            <a href="pages/contact.html#employers" class="btn btn-gold btn-lg">
               Hire Talent
             </a>
+          </div>
+          <div class="hero-credentials" aria-label="Consultancy commitments">
+            <span class="hero-credential-item"><span class="hero-credential-dot" aria-hidden="true"></span>Consultant-Led Screening</span>
+            <span class="hero-credential-item"><span class="hero-credential-dot" aria-hidden="true"></span>Permanent, Contract &amp; Agile Staffing</span>
+            <span class="hero-credential-item"><span class="hero-credential-dot" aria-hidden="true"></span>MG Road, Bengaluru Advisory Desk</span>
           </div>
         </div>
 
         <aside class="hero-focus-card reveal-right delay-200" aria-label="How HireBridge supports every engagement">
-          <img src="https://i.pinimg.com/736x/55/ec/76/55ec7660c8b244308efc6b65f521481c.jpg"
-            alt="Recruitment consultant supporting a candidate discussion" class="hero-focus-img" loading="eager" />
+          <div class="hero-focus-media">
+            <img src="https://i.pinimg.com/736x/55/ec/76/55ec7660c8b244308efc6b65f521481c.jpg"
+              alt="Recruitment consultant supporting a candidate discussion"
+              onerror="this.onerror=null;this.src='images/interview-consultation.jpg';"
+              class="hero-focus-img" loading="eager" />
+            <span class="hero-focus-status">
+              <span class="hero-focus-status-dot" aria-hidden="true"></span>
+              Active Advisory Desk · Bengaluru
+            </span>
+          </div>
           <div class="hero-focus-header">
             <span class="hero-focus-eyebrow">The HireBridge Standard</span>
             <span class="badge badge-white">People-First</span>
@@ -215,7 +229,7 @@
               </div>
               <div>
                 <strong>Structured Evaluation</strong>
-                <span>Requirement-focused talent sourcing, thorough screening, and clear shortlisting.</span>
+                <span>Requirement-focused talent sourcing, thorough screening, and curated shortlisting.</span>
               </div>
             </div>
             <div class="hero-focus-item">
@@ -230,7 +244,30 @@
               </div>
             </div>
           </div>
+          <div class="hero-focus-footer">
+            <span>Tailored brief or career check?</span>
+            <a href="pages/contact.html" class="hero-focus-footer-link">
+              Speak with Our Team
+              <svg class="arrow-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
         </aside>
+      </div>
+    </section>
+
+    <!-- PRACTICE & SECTOR STRIP -->
+    <section class="home-practice-bar" aria-label="Specialised recruitment practices">
+      <div class="container">
+        <div class="home-practice-inner">
+          <span class="home-practice-eyebrow">Practice Disciplines</span>
+          <div class="home-practice-links">
+            <a href="pages/home2.html#industries-heading" class="home-practice-link"><span class="home-practice-diamond" aria-hidden="true"></span>Technology &amp; Engineering</a>
+            <a href="pages/home2.html#industries-heading" class="home-practice-link"><span class="home-practice-diamond" aria-hidden="true"></span>Finance &amp; Governance</a>
+            <a href="pages/home2.html#industries-heading" class="home-practice-link"><span class="home-practice-diamond" aria-hidden="true"></span>Operations &amp; Logistics</a>
+            <a href="pages/home2.html#industries-heading" class="home-practice-link"><span class="home-practice-diamond" aria-hidden="true"></span>Healthcare &amp; Services</a>
+            <a href="pages/services.html" class="home-practice-link"><span class="home-practice-diamond" aria-hidden="true"></span>Workforce Advisory</a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -239,19 +276,24 @@
       <div class="container">
         <div class="grid-asymmetric align-center">
           <div class="reveal-left">
-            <div class="img-frame img-frame--tall">
-              <img src="https://i.pinimg.com/1200x/2a/be/b8/2abeb8d989841076c4775329431631f6.jpg"
-                alt="Recruiter and candidate in a structured consultation with notes and laptop" loading="lazy"
-                data-lightbox />
-              <div class="img-badge">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"
-                  aria-hidden="true">
-                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                  <circle cx="9" cy="7" r="4" />
-                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                </svg>
-                <span>Meaningful Career &amp; Hiring Connections</span>
+            <div class="about-showcase">
+              <div class="img-frame img-frame--tall">
+                <img src="https://i.pinimg.com/1200x/2a/be/b8/2abeb8d989841076c4775329431631f6.jpg"
+                  alt="Recruiter and candidate in a structured consultation with notes and laptop"
+                  onerror="this.onerror=null;this.src='images/office-consultation.jpg';"
+                  loading="lazy"
+                  data-lightbox />
+                <span class="about-monogram">Bridging Talent &amp; Opportunity</span>
+                <div class="img-badge img-badge--quote">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"
+                    aria-hidden="true">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                  </svg>
+                  <span class="img-badge-quote-text">"Every brief handled directly by dedicated specialists — never automated CV blasts."</span>
+                </div>
               </div>
             </div>
           </div>
@@ -270,7 +312,7 @@
               steps.
             </p>
             <ul class="feature-list">
-              <li class="feature-list-item">
+              <li class="feature-list-item pillar-row">
                 <span class="feature-list-icon feature-list-icon--teal" aria-hidden="true">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14">
                     <polyline points="20 6 9 17 4 12" />
@@ -279,7 +321,7 @@
                 <div><strong>People-First Service:</strong> Attentive support tailored to individual goals and workplace
                   culture.</div>
               </li>
-              <li class="feature-list-item">
+              <li class="feature-list-item pillar-row">
                 <span class="feature-list-icon feature-list-icon--teal" aria-hidden="true">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14">
                     <polyline points="20 6 9 17 4 12" />
@@ -288,7 +330,7 @@
                 <div><strong>Organized Process:</strong> Clear communication from initial requirement briefing through
                   offer coordination.</div>
               </li>
-              <li class="feature-list-item">
+              <li class="feature-list-item pillar-row">
                 <span class="feature-list-icon feature-list-icon--teal" aria-hidden="true">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14">
                     <polyline points="20 6 9 17 4 12" />
@@ -316,17 +358,23 @@
     <!-- SECTION 3: OUR RECRUITMENT SOLUTIONS -->
     <section class="section section--white" aria-labelledby="solutions-heading">
       <div class="container">
-        <header class="section-header reveal">
-          <span class="section-label">Our Recruitment Solutions</span>
-          <h2 id="solutions-heading" class="section-title">Structured Services for Every Hiring Stage</h2>
-          <p class="section-subtitle">
-            Whether you require long-term team members, agile short-term cover, or coordinated talent sourcing, our
-            services adapt to your staffing structure.
-          </p>
-        </header>
+        <div class="section-header-bar reveal">
+          <header class="section-header">
+            <span class="section-label">Our Recruitment Solutions</span>
+            <h2 id="solutions-heading" class="section-title">Structured Services for Every Hiring Stage</h2>
+            <p class="section-subtitle">
+              Whether you require long-term team members, agile short-term cover, or coordinated talent sourcing, our
+              services adapt seamlessly to your staffing structure.
+            </p>
+          </header>
+          <a href="pages/services.html" class="btn btn-outline btn-sm">
+            Compare All 6 Services
+            <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
 
         <div class="solutions-bento">
-          <article class="service-card service-card--featured reveal delay-100">
+          <article class="service-card service-card--featured service-card--executive reveal delay-100">
             <div class="service-card-top">
               <div class="service-card-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="24" height="24">
@@ -334,13 +382,18 @@
                   <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
                 </svg>
               </div>
-              <span class="service-card-index">01 · CORE HIRING</span>
+              <span class="service-card-index">01 · CORE SEARCH</span>
             </div>
             <h3 class="service-card-title">Permanent Recruitment</h3>
             <p class="service-card-body">
               End-to-end permanent hiring support covering role briefing, targeted candidate sourcing, thorough
               screening, curated shortlisting, and coordinated interview stages for lasting organisational fit.
             </p>
+            <div class="service-scope-tags">
+              <span class="service-scope-tag">Role Briefing</span>
+              <span class="service-scope-tag">Targeted Vetting</span>
+              <span class="service-scope-tag">Curated Shortlist</span>
+            </div>
             <a href="pages/service-details.html?service=permanent" class="service-card-link">
               Explore Permanent Recruitment
               <svg class="arrow-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2">
@@ -365,6 +418,11 @@
               Responsive short-term staffing support to maintain continuity during seasonal peaks, leave cover, or
               sudden workload increases with pre-screened, dependable professionals.
             </p>
+            <div class="service-scope-tags">
+              <span class="service-scope-tag">Rapid Mobilisation</span>
+              <span class="service-scope-tag">Continuity Cover</span>
+              <span class="service-scope-tag">Pre-Screened Pool</span>
+            </div>
             <a href="pages/service-details.html?service=temporary" class="service-card-link">
               Explore Temporary Staffing
               <svg class="arrow-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2">
@@ -391,6 +449,10 @@
               Project-focused and fixed-term professionals sourced for defined deliverables, specialist transformations,
               and interim operational requirements.
             </p>
+            <div class="service-scope-tags">
+              <span class="service-scope-tag">Fixed-Term</span>
+              <span class="service-scope-tag">Specialists</span>
+            </div>
             <a href="pages/service-details.html?service=contract" class="service-card-link">
               View Details
               <svg class="arrow-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2">
@@ -417,6 +479,10 @@
               Coordinated workforce planning, talent pipeline development, and ongoing recruitment assistance tailored
               to evolving team demands.
             </p>
+            <div class="service-scope-tags">
+              <span class="service-scope-tag">Pipeline Design</span>
+              <span class="service-scope-tag">Scale Support</span>
+            </div>
             <a href="pages/service-details.html?service=workforce" class="service-card-link">
               View Details
               <svg class="arrow-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2">
@@ -441,6 +507,10 @@
               Proactive identification of qualified candidates aligned with specific skills, experience markers, and
               workplace expectations.
             </p>
+            <div class="service-scope-tags">
+              <span class="service-scope-tag">Market Mapping</span>
+              <span class="service-scope-tag">Assessment</span>
+            </div>
             <a href="pages/service-details.html?service=sourcing" class="service-card-link">
               View Details
               <svg class="arrow-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2">
@@ -464,6 +534,10 @@
               Dedicated screening, interview coordination, and transparent process updates supporting hiring teams and
               applicants from start to offer.
             </p>
+            <div class="service-scope-tags">
+              <span class="service-scope-tag">Scheduling</span>
+              <span class="service-scope-tag">Feedback Loops</span>
+            </div>
             <a href="pages/service-details.html?service=support" class="service-card-link">
               View Details
               <svg class="arrow-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2">
@@ -486,7 +560,7 @@
             Navigating your next career move shouldn't feel uncertain. HireBridge pairs opportunity discovery with
             attentive candidate support so you present your strengths clearly at every stage.
           </p>
-          <ul class="dual-panel-list">
+          <ul class="dual-panel-list dual-panel-list--glass">
             <li class="dual-panel-list-item">
               <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" width="13"
                   height="13">
@@ -517,7 +591,7 @@
             </li>
           </ul>
           <div style="display: flex; flex-wrap: wrap; gap: var(--space-3);">
-            <a href="pages/services.html#candidates" class="btn btn-white">Candidate Support</a>
+            <a href="pages/services.html#candidates" class="btn btn-teal">Candidate Support</a>
             <a href="pages/contact.html#candidates" class="btn btn-outline-white">Submit Enquiry</a>
           </div>
         </div>
@@ -531,7 +605,7 @@
             From single permanent appointments to flexible project staffing, we partner with employers to understand
             role requirements thoroughly and present genuinely suitable candidates.
           </p>
-          <ul class="dual-panel-list">
+          <ul class="dual-panel-list dual-panel-list--glass">
             <li class="dual-panel-list-item">
               <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" width="13"
                   height="13">
@@ -584,6 +658,7 @@
         <div class="process-timeline">
           <article class="process-step reveal delay-100">
             <div class="process-step-num" aria-hidden="true">1</div>
+            <span class="process-step-kicker">Stage 01</span>
             <div class="process-step-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
                 <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
@@ -596,6 +671,7 @@
 
           <article class="process-step reveal delay-200">
             <div class="process-step-num" aria-hidden="true">2</div>
+            <span class="process-step-kicker">Stage 02</span>
             <div class="process-step-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
                 <circle cx="11" cy="11" r="8" />
@@ -609,6 +685,7 @@
 
           <article class="process-step reveal delay-300">
             <div class="process-step-num" aria-hidden="true">3</div>
+            <span class="process-step-kicker">Stage 03</span>
             <div class="process-step-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
                 <path d="M9 11l3 3L22 4" />
@@ -622,6 +699,7 @@
 
           <article class="process-step reveal delay-400">
             <div class="process-step-num" aria-hidden="true">4</div>
+            <span class="process-step-kicker">Stage 04</span>
             <div class="process-step-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
                 <rect x="3" y="4" width="18" height="18" rx="2" />
@@ -637,6 +715,7 @@
 
           <article class="process-step reveal delay-500">
             <div class="process-step-num" aria-hidden="true">5</div>
+            <span class="process-step-kicker">Stage 05</span>
             <div class="process-step-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
                 <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
@@ -651,7 +730,76 @@
       </div>
     </section>
 
-    <!-- SECTION 6: FINAL SPLIT CTA -->
+    <!-- SECTION 6: EDITORIAL PERSPECTIVES & GUIDES -->
+    <section class="section section--white" aria-labelledby="insights-heading">
+      <div class="container">
+        <div class="section-header-bar reveal">
+          <header class="section-header">
+            <span class="section-label">Editorial Perspectives</span>
+            <h2 id="insights-heading" class="section-title">Career &amp; Hiring Advisory Guides</h2>
+            <p class="section-subtitle">
+              Actionable frameworks written by our consultancy desk to elevate applications, interviews, and employer hiring plans.
+            </p>
+          </header>
+          <a href="pages/blog.html" class="btn btn-outline btn-sm">
+            View All 7 Guides
+            <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+
+        <div class="grid-3">
+          <article class="blog-card reveal delay-100">
+            <a href="pages/blog-details.html?article=interview-prep" class="blog-card-img-wrap">
+              <img src="https://i.pinimg.com/736x/ef/b8/51/efb85106a3a727af1697ecf571ab2071.jpg"
+                alt="Professionals reviewing interview structure together"
+                onerror="this.onerror=null;this.src='images/interview-session.jpg';"
+                class="blog-card-img" loading="lazy" />
+              <span class="blog-card-category">Interview Preparation</span>
+            </a>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span>Advisory Guide</span><span>·</span><span>Interview Skills</span></div>
+              <h3 class="blog-card-title"><a href="pages/blog-details.html?article=interview-prep">How to Prepare for a Recruitment Interview</a></h3>
+              <p class="blog-card-excerpt">Research organisations effectively, structure STAR examples cleanly, and ask insightful panel questions.</p>
+              <a href="pages/blog-details.html?article=interview-prep" class="blog-card-link">Read Guide <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            </div>
+          </article>
+
+          <article class="blog-card reveal delay-200">
+            <a href="pages/blog-details.html?article=strong-cv" class="blog-card-img-wrap">
+              <img src="https://i.pinimg.com/1200x/7b/ae/05/7bae059484171714a286a5a33b3e8d06.jpg"
+                alt="Close-up review of a structured CV and role brief"
+                onerror="this.onerror=null;this.src='images/recruiter-desk.jpg';"
+                class="blog-card-img" loading="lazy" />
+              <span class="blog-card-category">CV Guidance</span>
+            </a>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span>Advisory Guide</span><span>·</span><span>CV Structuring</span></div>
+              <h3 class="blog-card-title"><a href="pages/blog-details.html?article=strong-cv">Building a Strong Professional CV</a></h3>
+              <p class="blog-card-excerpt">Clear formatting, relevant impact statements, and tailored structure that highlight suitability without clutter.</p>
+              <a href="pages/blog-details.html?article=strong-cv" class="blog-card-link">Read Guide <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            </div>
+          </article>
+
+          <article class="blog-card reveal delay-300">
+            <a href="pages/blog-details.html?article=employer-planning" class="blog-card-img-wrap">
+              <img src="https://i.pinimg.com/736x/a3/c8/2f/a3c82f95f6094393d596c0070c0355c9.jpg"
+                alt="Workforce planning workspace with structured data review"
+                onerror="this.onerror=null;this.src='images/analytics-office.jpg';"
+                class="blog-card-img" loading="lazy" />
+              <span class="blog-card-category">Employer Strategy</span>
+            </a>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span>Advisory Guide</span><span>·</span><span>Hiring Strategy</span></div>
+              <h3 class="blog-card-title"><a href="pages/blog-details.html?article=employer-planning">Effective Recruitment Planning for Employers</a></h3>
+              <p class="blog-card-excerpt">How calibrated job briefs, structured interview panels, and prompt feedback elevate recruitment outcomes.</p>
+              <a href="pages/blog-details.html?article=employer-planning" class="blog-card-link">Read Guide <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: LUXURY CONCIERGE CTA PAVILION -->
     <section class="cta-section cta-section--navy" aria-labelledby="final-cta-heading">
       <div class="cta-geo" aria-hidden="true">
         <svg viewBox="0 0 1200 320" fill="none" preserveAspectRatio="none">
@@ -660,12 +808,12 @@
         </svg>
       </div>
       <div class="container">
-        <div class="cta-inner reveal">
+        <div class="cta-inner cta-pavilion reveal">
           <span class="section-label section-label--gold">Start Your Connection</span>
-          <h2 id="final-cta-heading" class="cta-title">Ready to Take the Next Step?</h2>
+          <h2 id="final-cta-heading" class="cta-title">Ready to Take the <span class="hero-title-serif">Next Step?</span></h2>
           <p class="cta-body">
-            Whether you are exploring your next professional opportunity or looking to hire skilled talent for your
-            organisation, our team is ready to support your goals.
+            Whether you are exploring your next career milestone or commissioning a strategic recruitment search for your
+            organisation, our Bengaluru consultancy desk is ready to assist.
           </p>
           <div class="cta-actions">
             <a href="pages/contact.html#candidates" class="btn btn-teal btn-lg">
@@ -676,6 +824,12 @@
               </svg>
             </a>
             <a href="pages/contact.html#employers" class="btn btn-gold btn-lg">Discuss Your Hiring Needs</a>
+          </div>
+          <div class="cta-concierge-strip">
+            <a href="tel:+918000004210" class="home-concierge-link"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.59 1.21h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+91 80 0000 4210</a>
+            <a href="https://wa.me/919800004210" target="_blank" rel="noopener noreferrer" class="home-concierge-link"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"/><path d="M9 10a.5.5 0 0 0 1 0v-1a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/></svg>WhatsApp Desk</a>
+            <a href="mailto:hello@hirebridge.com" class="home-concierge-link"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>hello@hirebridge.com</a>
+            <a href="https://maps.google.com/?q=Level+6,+Prestige+Meridian,+MG+Road,+Bengaluru,+Karnataka+560001,+India" target="_blank" rel="noopener noreferrer" class="home-concierge-link"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>MG Road, Bengaluru</a>
           </div>
         </div>
       </div>
