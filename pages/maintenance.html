@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="HireBridge scheduled system maintenance notice with live countdown timer and direct contact options." />
+  <title>Scheduled Maintenance – HireBridge Recruitment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .maint-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: radial-gradient(circle at 20% 20%, rgba(40, 100, 180, 0.25) 0%, transparent 48%),
+                  radial-gradient(circle at 82% 78%, rgba(53, 166, 154, 0.22) 0%, transparent 45%),
+                  linear-gradient(145deg, #0D1A30 0%, #172B4D 54%, #1A3A68 100%);
+      color: #fff;
+      padding: var(--space-8) var(--space-6);
+      position: relative;
+      overflow: hidden;
+    }
+    .maint-shell {
+      position: relative;
+      z-index: 2;
+      max-width: 980px;
+      width: 100%;
+      margin-inline: auto;
+    }
+    .maint-topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: var(--space-10);
+    }
+    .maint-grid {
+      display: grid;
+      grid-template-columns: 1.08fr 0.92fr;
+      gap: var(--space-10);
+      align-items: center;
+    }
+    .countdown-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: var(--space-3);
+      margin-block: var(--space-7);
+    }
+    .countdown-box {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(12px);
+      border-radius: var(--radius-xl);
+      padding: var(--space-5) var(--space-3);
+      text-align: center;
+    }
+    .countdown-value {
+      display: block;
+      font-family: var(--font-display);
+      font-size: clamp(1.75rem, 4vw, 2.65rem);
+      font-weight: 800;
+      line-height: 1;
+      font-variant-numeric: tabular-nums;
+      color: #fff;
+      margin-bottom: 0.35rem;
+    }
+    .countdown-label {
+      display: block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--sky);
+    }
+    .maint-vector-card {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: var(--radius-2xl);
+      padding: var(--space-8);
+      backdrop-filter: blur(14px);
+      text-align: center;
+    }
+    .gear-spin {
+      transform-origin: 292px 92px;
+      animation: maintSpin 18s linear infinite;
+    }
+    .gear-spin-reverse {
+      transform-origin: 332px 128px;
+      animation: maintSpinReverse 12s linear infinite;
+    }
+    .pulse-node {
+      animation: maintPulse 2.6s ease-in-out infinite;
+    }
+    @keyframes maintSpin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes maintSpinReverse {
+      from { transform: rotate(360deg); }
+      to { transform: rotate(0deg); }
+    }
+    @keyframes maintPulse {
+      0%, 100% { opacity: 0.9; transform: scale(1); }
+      50% { opacity: 0.45; transform: scale(1.12); }
+    }
+    @media (max-width: 900px) {
+      .maint-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 520px) {
+      .countdown-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+  </style>
+</head>
+<body>
+
+  <main class="maint-page">
+    <div class="maint-shell">
+      <div class="maint-topbar">
+        <a href="../index.html" class="nav-logo" aria-label="HireBridge Home">
+          <div class="nav-logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M3 15 Q12 5 21 15" stroke="white" stroke-width="2.4" stroke-linecap="round"/>
+              <path d="M6 15 Q12 9 18 15" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+              <line x1="3" y1="18" x2="21" y2="18" stroke="rgba(255,255,255,0.65)" stroke-width="1.6" stroke-linecap="round"/>
+              <circle cx="12" cy="8.5" r="1.6" fill="#D4AA62"/>
+            </svg>
+          </div>
+          <span class="nav-logo-text">Hire<span>Bridge</span></span>
+        </a>
+
+        <div style="display: flex; align-items: center; gap: 0.5rem;">
+          <button class="nav-toggle-btn" type="button" data-theme-toggle title="Toggle dark/light theme">🌙</button>
+          <button class="nav-toggle-btn" type="button" data-dir-toggle title="Toggle LTR/RTL layout">RTL</button>
+          <a href="../index.html" class="btn btn-outline-white btn-sm">Back to Home</a>
+        </div>
+      </div>
+
+      <div class="maint-grid">
+        <div>
+          <span class="badge badge-gold" style="margin-bottom: var(--space-4);">Scheduled Maintenance</span>
+          <h1 style="font-size: clamp(2rem, 4.4vw, 3.25rem); color: #fff; line-height: 1.1; margin-bottom: var(--space-4);">
+            Upgrading Our Platform to Serve You Better.
+          </h1>
+          <p style="font-size: var(--text-base); color: rgba(255,255,255,0.82); line-height: 1.72; max-width: 540px;">
+            HireBridge is performing scheduled improvements to enhance reliability, speed, and recruitment enquiry workflows. Core services will return shortly.
+          </p>
+
+          <!-- Live Countdown Timer -->
+          <div class="countdown-grid" role="timer" aria-label="Estimated maintenance completion countdown">
+            <div class="countdown-box">
+              <span class="countdown-value" id="mt-days">00</span>
+              <span class="countdown-label">Days</span>
+            </div>
+            <div class="countdown-box">
+              <span class="countdown-value" id="mt-hours">04</span>
+              <span class="countdown-label">Hours</span>
+            </div>
+            <div class="countdown-box">
+              <span class="countdown-value" id="mt-mins">30</span>
+              <span class="countdown-label">Minutes</span>
+            </div>
+            <div class="countdown-box">
+              <span class="countdown-value" id="mt-secs">00</span>
+              <span class="countdown-label">Seconds</span>
+            </div>
+          </div>
+
+          <!-- Optional Notification Form -->
+          <div style="background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.16); border-radius: var(--radius-xl); padding: var(--space-5); margin-bottom: var(--space-6);">
+            <p style="font-size: var(--text-sm); font-weight: 600; color: #fff; margin-bottom: 0.35rem;">Get notified when maintenance finishes (Optional)</p>
+            <p style="font-size: var(--text-xs); color: rgba(255,255,255,0.65); margin-bottom: var(--space-4);">
+              Front-end demonstration only — email inputs are validated locally without backend storage.
+            </p>
+            <form class="newsletter-form">
+              <input type="email" class="newsletter-input" placeholder="Enter your email address" required aria-label="Email address for maintenance completion notice" />
+              <button type="submit" class="btn btn-gold btn-sm">Notify Me</button>
+            </form>
+          </div>
+
+          <div style="display: flex; flex-wrap: wrap; gap: var(--space-3);">
+            <a href="../index.html" class="btn btn-white">Return to Home</a>
+            <a href="contact.html" class="btn btn-teal">Contact Enquiries</a>
+            <a href="sitemap.html" class="btn btn-outline-white">View Sitemap</a>
+          </div>
+        </div>
+
+        <!-- Custom Vector SVG Maintenance Illustration -->
+        <aside class="maint-vector-card" aria-label="Bridge engineering maintenance vector illustration">
+          <svg viewBox="0 0 400 320" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Geometric bridge and calibration gears illustration">
+            <defs>
+              <linearGradient id="maintBridgeGrad" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="#55A6E8" />
+                <stop offset="55%" stop-color="#35A69A" />
+                <stop offset="100%" stop-color="#D4AA62" />
+              </linearGradient>
+              <linearGradient id="maintDeckGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="rgba(85,166,232,0.25)" />
+                <stop offset="100%" stop-color="rgba(85,166,232,0)" />
+              </linearGradient>
+            </defs>
+
+            <!-- Background Blueprint Grid -->
+            <g stroke="rgba(255,255,255,0.07)" stroke-width="1">
+              <line x1="20" y1="60" x2="380" y2="60" />
+              <line x1="20" y1="120" x2="380" y2="120" />
+              <line x1="20" y1="180" x2="380" y2="180" />
+              <line x1="20" y1="240" x2="380" y2="240" />
+              <line x1="80" y1="20" x2="80" y2="280" />
+              <line x1="200" y1="20" x2="200" y2="280" />
+              <line x1="320" y1="20" x2="320" y2="280" />
+            </g>
+
+            <!-- Animated Calibration Gear 1 -->
+            <g class="gear-spin" stroke="#55A6E8" stroke-width="2.5" fill="rgba(85,166,232,0.12)">
+              <circle cx="292" cy="92" r="24" />
+              <circle cx="292" cy="92" r="9" fill="#172B4D" />
+              <path d="M292 60 V68 M292 116 V124 M260 92 H268 M316 92 H324 M269 69 L275 75 M309 109 L315 115 M315 69 L309 75 M275 109 L269 115" stroke-linecap="round" />
+            </g>
+
+            <!-- Animated Calibration Gear 2 -->
+            <g class="gear-spin-reverse" stroke="#D4AA62" stroke-width="2.2" fill="rgba(212,170,98,0.14)">
+              <circle cx="332" cy="128" r="16" />
+              <circle cx="332" cy="128" r="6" fill="#172B4D" />
+              <path d="M332 106 V112 M332 144 V150 M310 128 H316 M348 128 H354" stroke-linecap="round" />
+            </g>
+
+            <!-- Bridge Pillars & Suspension Cables -->
+            <rect x="92" y="106" width="12" height="140" rx="4" fill="rgba(255,255,255,0.22)" stroke="#55A6E8" stroke-width="1.5" />
+            <rect x="296" y="138" width="12" height="108" rx="4" fill="rgba(255,255,255,0.22)" stroke="#35A69A" stroke-width="1.5" />
+
+            <!-- Suspension Arc -->
+            <path d="M36 226 Q98 110 200 176 Q280 228 364 146" stroke="url(#maintBridgeGrad)" stroke-width="4" fill="none" stroke-linecap="round" />
+            <path d="M36 226 H364" stroke="rgba(255,255,255,0.55)" stroke-width="3" stroke-linecap="round" />
+            <path d="M36 226 H364 V266 H36 Z" fill="url(#maintDeckGrad)" />
+
+            <!-- Vertical Cable Ties -->
+            <g stroke="rgba(255,255,255,0.35)" stroke-width="1.5" stroke-dasharray="3 3">
+              <line x1="130" y1="146" x2="130" y2="226" />
+              <line x1="165" y1="158" x2="165" y2="226" />
+              <line x1="200" y1="176" x2="200" y2="226" />
+              <line x1="235" y1="186" x2="235" y2="226" />
+              <line x1="270" y1="182" x2="270" y2="226" />
+            </g>
+
+            <!-- Active Status Nodes -->
+            <circle class="pulse-node" cx="98" cy="106" r="7" fill="#55A6E8" />
+            <circle cx="200" cy="176" r="7" fill="#D4AA62" />
+            <circle cx="302" cy="138" r="6" fill="#35A69A" />
+
+            <!-- Status Pill Inside Graphic -->
+            <rect x="96" y="256" width="208" height="34" rx="17" fill="rgba(15,30,56,0.85)" stroke="rgba(85,166,232,0.45)" />
+            <circle cx="118" cy="273" r="4.5" fill="#35A69A" />
+            <text x="132" y="277" fill="#FAFBFD" font-family="Inter, sans-serif" font-size="11.5" font-weight="600">System Calibration Active</text>
+          </svg>
+
+          <p style="font-size: var(--text-xs); color: rgba(255,255,255,0.68); margin-top: var(--space-4); line-height: 1.6;">
+            All recruitment enquiries and career pages remain accessible via our navigation links.
+          </p>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <div class="toast-container" id="toastContainer"></div>
+  <script src="../js/main.js"></script>
+  <script>
+    (function () {
+      const KEY = 'hb_maint_target';
+      let target = parseInt(sessionStorage.getItem(KEY) || '', 10);
+      if (!target || target <= Date.now()) {
+        // Default 4h 30m maintenance window stored per session
+        target = Date.now() + (4 * 60 + 30) * 60 * 1000;
+        sessionStorage.setItem(KEY, String(target));
+      }
+
+      const dEl = document.getElementById('mt-days');
+      const hEl = document.getElementById('mt-hours');
+      const mEl = document.getElementById('mt-mins');
+      const sEl = document.getElementById('mt-secs');
+      const pad = n => String(Math.max(0, n)).padStart(2, '0');
+
+      function tick() {
+        const diff = Math.max(0, target - Date.now());
+        const d = Math.floor(diff / 86400000);
+        const h = Math.floor((diff % 86400000) / 3600000);
+        const m = Math.floor((diff % 3600000) / 60000);
+        const s = Math.floor((diff % 60000) / 1000);
+        if (dEl) dEl.textContent = pad(d);
+        if (hEl) hEl.textContent = pad(h);
+        if (mEl) mEl.textContent = pad(m);
+        if (sEl) sEl.textContent = pad(s);
+      }
+
+      tick();
+      setInterval(tick, 1000);
+    })();
+  </script>
+</body>
+</html>

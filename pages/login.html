@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="HireBridge Candidate and Employer authentication demonstration interface for sign in and account registration." />
+  <title>Login / Register – HireBridge Access Interface (Demo)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <!-- GLOBAL NAVIGATION (SOLID VARIANT FOR LIGHT AUTH VIEW) -->
+  <nav id="navbar" class="navbar navbar--solid" aria-label="Primary navigation">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="../index.html" class="nav-logo" aria-label="HireBridge Home">
+          <div class="nav-logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M3 15 Q12 5 21 15" stroke="white" stroke-width="2.4" stroke-linecap="round"/>
+              <path d="M6 15 Q12 9 18 15" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+              <line x1="3" y1="18" x2="21" y2="18" stroke="rgba(255,255,255,0.65)" stroke-width="1.6" stroke-linecap="round"/>
+              <circle cx="12" cy="8.5" r="1.6" fill="#D4AA62"/>
+            </svg>
+          </div>
+          <span class="nav-logo-text">Hire<span>Bridge</span></span>
+        </a>
+
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link" aria-haspopup="true">
+              Home
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <div class="nav-dropdown" role="menu">
+              <a href="../index.html" class="nav-dropdown-link" role="menuitem">Home 1 – General Recruitment<small>Overview for candidates &amp; employers</small></a>
+              <a href="home2.html" class="nav-dropdown-link" role="menuitem">Home 2 – Solutions &amp; Sectors<small>Staffing &amp; configurable industry focus</small></a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item">
+            <a href="services.html" class="nav-link" aria-haspopup="true">
+              Services
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <div class="nav-dropdown" role="menu">
+              <a href="services.html" class="nav-dropdown-link" role="menuitem">All Recruitment Services<small>Complete staffing &amp; workforce portfolio</small></a>
+              <a href="service-details.html?service=permanent" class="nav-dropdown-link" role="menuitem">Permanent Recruitment<small>Structured long-term hiring support</small></a>
+              <a href="service-details.html?service=temporary" class="nav-dropdown-link" role="menuitem">Temporary Staffing<small>Flexible short-term workforce cover</small></a>
+              <a href="service-details.html?service=contract" class="nav-dropdown-link" role="menuitem">Contract Staffing<small>Project-based &amp; fixed-term talent</small></a>
+              <a href="service-details.html?service=workforce" class="nav-dropdown-link" role="menuitem">Workforce Solutions<small>Planning &amp; pipeline coordination</small></a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="services.html#candidates" class="nav-link" aria-haspopup="true">
+              For Candidates
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <div class="nav-dropdown" role="menu">
+              <a href="services.html#candidates" class="nav-dropdown-link" role="menuitem">Candidate Support<small>CV guidance &amp; interview preparation</small></a>
+              <a href="contact.html#candidates" class="nav-dropdown-link" role="menuitem">Submit Career Enquiry<small>Share your profile &amp; resume</small></a>
+              <a href="login.html" class="nav-dropdown-link" role="menuitem">Candidate Sign In (Demo)<small>Authentication interface preview</small></a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="services.html#employers" class="nav-link" aria-haspopup="true">
+              For Employers
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <div class="nav-dropdown" role="menu">
+              <a href="services.html#employers" class="nav-dropdown-link" role="menuitem">Employer Support<small>Tailored sourcing &amp; shortlisting</small></a>
+              <a href="contact.html#employers" class="nav-dropdown-link" role="menuitem">Submit Hiring Enquiry<small>Discuss open roles &amp; staffing needs</small></a>
+              <a href="pricing.html" class="nav-dropdown-link" role="menuitem">Employer Packages<small>Flexible recruitment solutions</small></a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="blog.html" class="nav-link" aria-haspopup="true">
+              Blog
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <div class="nav-dropdown" role="menu">
+              <a href="blog.html" class="nav-dropdown-link" role="menuitem">Career &amp; Hiring Insights<small>Articles, tips &amp; workplace trends</small></a>
+              <a href="blog-details.html" class="nav-dropdown-link" role="menuitem">Featured Interview Guide<small>Practical interview preparation</small></a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="nav-toggle-btn" type="button" data-theme-toggle title="Toggle dark/light theme">🌙</button>
+          <button class="nav-toggle-btn" type="button" data-dir-toggle title="Toggle LTR/RTL layout">RTL</button>
+          <a href="contact.html#candidates" class="btn btn-teal btn-sm nav-secondary-cta">Find Opportunities</a>
+          <a href="contact.html#employers" class="btn btn-primary btn-sm">Hire Talent</a>
+          <button id="hamburger" class="hamburger" type="button" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE DRAWER -->
+  <div id="mobileNav" class="mobile-nav" aria-hidden="true">
+    <div class="mobile-nav-header">
+      <a href="../index.html" class="nav-logo">
+        <div class="nav-logo-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M3 15 Q12 5 21 15" stroke="white" stroke-width="2.4" stroke-linecap="round"/><circle cx="12" cy="8.5" r="1.6" fill="#D4AA62"/></svg></div>
+        <span class="nav-logo-text">Hire<span>Bridge</span></span>
+      </a>
+      <button id="mobileNavClose" class="mobile-nav-close" type="button" aria-label="Close menu">×</button>
+    </div>
+    <nav class="mobile-nav-menu" aria-label="Mobile navigation">
+      <a href="../index.html" class="mobile-nav-link">Home 1 – General Recruitment</a>
+      <div class="mobile-nav-sub"><a href="home2.html">Home 2 – Solutions &amp; Sectors</a></div>
+      <a href="about.html" class="mobile-nav-link">About Us</a>
+      <a href="services.html" class="mobile-nav-link">Services</a>
+      <div class="mobile-nav-sub">
+        <a href="service-details.html?service=permanent">Service Details</a>
+        <a href="services.html#candidates">For Candidates</a>
+        <a href="services.html#employers">For Employers</a>
+      </div>
+      <a href="blog.html" class="mobile-nav-link">Blog</a>
+      <a href="pricing.html" class="mobile-nav-link">Pricing</a>
+      <a href="contact.html" class="mobile-nav-link">Contact Us</a>
+      <a href="login.html" class="mobile-nav-link">Login / Register</a>
+    </nav>
+    <div class="mobile-nav-actions">
+      <a href="contact.html#candidates" class="btn btn-teal w-full">Find Opportunities</a>
+      <a href="contact.html#employers" class="btn btn-white w-full">Hire Talent</a>
+    </div>
+  </div>
+
+  <main style="padding-top: var(--navbar-h);">
+    <section class="auth-page" aria-labelledby="auth-heading">
+      <!-- LEFT VISUAL PANEL -->
+      <div class="auth-visual" style="background-image: url('../images/executive-coach.jpg');">
+        <div>
+          <span class="badge badge-gold">Access Interface Demonstration</span>
+        </div>
+
+        <div>
+          <p class="serif-accent" style="font-size: clamp(1.65rem, 2.8vw, 2.4rem); color: #fff; line-height: 1.3; margin-bottom: var(--space-6);">
+            "Your next career step or hiring search starts with a clear, dependable connection."
+          </p>
+          <ul class="feature-list" style="margin-top: 0;">
+            <li class="feature-list-item" style="color: rgba(255,255,255,0.88);">
+              <span class="feature-list-icon feature-list-icon--teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><polyline points="20 6 9 17 4 12"/></svg></span>
+              <span>Separate Candidate &amp; Employer access pathways</span>
+            </li>
+            <li class="feature-list-item" style="color: rgba(255,255,255,0.88);">
+              <span class="feature-list-icon feature-list-icon--teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><polyline points="20 6 9 17 4 12"/></svg></span>
+              <span>Front-end validation and password visibility toggle</span>
+            </li>
+            <li class="feature-list-item" style="color: rgba(255,255,255,0.88);">
+              <span class="feature-list-icon feature-list-icon--teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><polyline points="20 6 9 17 4 12"/></svg></span>
+              <span>Authentication UI only — no dashboard or stored accounts</span>
+            </li>
+          </ul>
+        </div>
+
+        <p style="font-size: var(--text-xs); color: rgba(255,255,255,0.55); border-top: 1px solid rgba(255,255,255,0.14); padding-top: var(--space-4);">
+          Notice: Front-end demonstration interface. No real account creation, authentication, or resume storage occurs without backend integration.
+        </p>
+      </div>
+
+      <!-- RIGHT AUTH PANEL -->
+      <div class="auth-panel" data-auth-root>
+        <div class="auth-panel-inner">
+          <span class="section-label">Access Interface (Demo)</span>
+          <h1 id="auth-heading" style="font-size: var(--text-3xl); margin-bottom: var(--space-6);">Candidate &amp; Employer Access</h1>
+
+          <!-- User Type Switcher -->
+          <div class="user-type-group" role="group" aria-label="Select account type">
+            <button type="button" class="user-type-btn active" data-user-type="candidate">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              Candidate
+            </button>
+            <button type="button" class="user-type-btn" data-user-type="employer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+              Employer
+            </button>
+          </div>
+
+          <!-- Sign In / Register Switcher -->
+          <div class="auth-tabs" role="tablist" aria-label="Authentication mode">
+            <button type="button" class="auth-tab-btn active" data-auth-tab="login" role="tab">Sign In</button>
+            <button type="button" class="auth-tab-btn" data-auth-tab="register" role="tab">Register</button>
+          </div>
+
+          <!-- CANDIDATE LOGIN -->
+          <div data-auth-panel="login" data-user-context="candidate">
+            <form data-validate novalidate data-success-msg="Candidate login inputs validated (front-end demonstration only — no real authentication occurs without a backend).">
+              <div data-form-status></div>
+              <div class="auth-form-group">
+                <label class="auth-label" for="cand-login-email">Email Address <span class="required">*</span></label>
+                <input class="auth-input" type="email" id="cand-login-email" name="email" placeholder="candidate@example.com" required autocomplete="email" />
+                <span class="input-error-msg">Please enter a valid email address.</span>
+              </div>
+              <div class="auth-form-group">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-2);">
+                  <label class="auth-label" for="cand-login-pwd" style="margin-bottom: 0;">Password <span class="required">*</span></label>
+                  <a href="#forgot" data-action="forgot-password" style="font-size: var(--text-xs); font-weight: 600;">Forgot Password?</a>
+                </div>
+                <div class="password-wrapper">
+                  <input class="auth-input" type="password" id="cand-login-pwd" name="password" placeholder="Enter password" required autocomplete="current-password" />
+                  <button type="button" class="password-toggle" aria-label="Show password"></button>
+                </div>
+                <span class="input-error-msg">Password is required.</span>
+              </div>
+              <button type="submit" class="btn btn-teal btn-lg w-full">Sign In as Candidate (Demo)</button>
+            </form>
+          </div>
+
+          <!-- EMPLOYER LOGIN -->
+          <div class="d-none" data-auth-panel="login" data-user-context="employer">
+            <form data-validate novalidate data-success-msg="Employer login inputs validated (front-end demonstration only — no real authentication occurs without a backend).">
+              <div data-form-status></div>
+              <div class="auth-form-group">
+                <label class="auth-label" for="emp-login-email">Work Email <span class="required">*</span></label>
+                <input class="auth-input" type="email" id="emp-login-email" name="email" placeholder="name@company.com" required autocomplete="email" />
+                <span class="input-error-msg">Please enter a valid work email address.</span>
+              </div>
+              <div class="auth-form-group">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-2);">
+                  <label class="auth-label" for="emp-login-pwd" style="margin-bottom: 0;">Password <span class="required">*</span></label>
+                  <a href="#forgot" data-action="forgot-password" style="font-size: var(--text-xs); font-weight: 600;">Forgot Password?</a>
+                </div>
+                <div class="password-wrapper">
+                  <input class="auth-input" type="password" id="emp-login-pwd" name="password" placeholder="Enter password" required autocomplete="current-password" />
+                  <button type="button" class="password-toggle" aria-label="Show password"></button>
+                </div>
+                <span class="input-error-msg">Password is required.</span>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg w-full">Sign In as Employer (Demo)</button>
+            </form>
+          </div>
+
+          <!-- CANDIDATE REGISTER -->
+          <div class="d-none" data-auth-panel="register" data-user-context="candidate">
+            <form data-validate novalidate data-success-msg="Candidate registration inputs validated (front-end demonstration only — no account has been created).">
+              <div data-form-status></div>
+              <div class="auth-form-group">
+                <label class="auth-label" for="cand-reg-name">Full Name <span class="required">*</span></label>
+                <input class="auth-input" type="text" id="cand-reg-name" name="full_name" placeholder="Your full name" required autocomplete="name" />
+                <span class="input-error-msg">Full name is required.</span>
+              </div>
+              <div class="auth-form-group">
+                <label class="auth-label" for="cand-reg-email">Email Address <span class="required">*</span></label>
+                <input class="auth-input" type="email" id="cand-reg-email" name="email" placeholder="candidate@example.com" required autocomplete="email" />
+                <span class="input-error-msg">Please enter a valid email address.</span>
+              </div>
+              <div class="auth-form-group">
+                <label class="auth-label" for="cand-reg-phone">Phone Number</label>
+                <input class="auth-input" type="tel" id="cand-reg-phone" name="phone" placeholder="+00 000 000 0000" autocomplete="tel" />
+                <span class="input-error-msg">Please enter a valid phone number.</span>
+              </div>
+              <div class="auth-form-group">
+                <label class="auth-label" for="cand-reg-pwd">Password <span class="required">*</span></label>
+                <div class="password-wrapper">
+                  <input class="auth-input" type="password" id="cand-reg-pwd" name="password" placeholder="Create password" required autocomplete="new-password" />
+                  <button type="button" class="password-toggle" aria-label="Show password"></button>
+                </div>
+                <span class="input-error-msg">Password is required.</span>
+              </div>
+              <div class="auth-form-group">
+                <label class="auth-label" for="cand-reg-confirm">Confirm Password <span class="required">*</span></label>
+                <div class="password-wrapper">
+                  <input class="auth-input" type="password" id="cand-reg-confirm" name="confirm_password" placeholder="Repeat password" required autocomplete="new-password" />
+                  <button type="button" class="password-toggle" aria-label="Show password"></button>
+                </div>
+                <span class="input-error-msg">Passwords must match.</span>
+              </div>
+              <div class="auth-checkbox-group">
+                <input type="checkbox" id="cand-demo-ack" name="demo_ack" required />
+                <label for="cand-demo-ack">I understand this is a front-end demonstration and no account is created without backend integration.</label>
+                <span class="input-error-msg"></span>
+              </div>
+              <button type="submit" class="btn btn-teal btn-lg w-full">Register Candidate (Demo)</button>
+            </form>
+          </div>
+
+          <!-- EMPLOYER REGISTER -->
+          <div class="d-none" data-auth-panel="register" data-user-context="employer">
+            <form data-validate novalidate data-success-msg="Employer registration inputs validated (front-end demonstration only — no account has been created).">
+              <div data-form-status></div>
+              <div class="auth-form-group">
+                <label class="auth-label" for="emp-reg-name">Full Name / Contact Person <span class="required">*</span></label>
+                <input class="auth-input" type="text" id="emp-reg-name" name="full_name" placeholder="Your full name" required autocomplete="name" />
+                <span class="input-error-msg">Full name is required.</span>
+              </div>
+              <div class="auth-form-group">
+                <label class="auth-label" for="emp-reg-company">Company Name <span class="required">*</span></label>
+                <input class="auth-input" type="text" id="emp-reg-company" name="company" placeholder="Organisation name" required />
+                <span class="input-error-msg">Company name is required.</span>
+              </div>
+              <div class="auth-form-group">
+                <label class="auth-label" for="emp-reg-email">Work Email <span class="required">*</span></label>
+                <input class="auth-input" type="email" id="emp-reg-email" name="email" placeholder="name@company.com" required autocomplete="email" />
+                <span class="input-error-msg">Please enter a valid work email address.</span>
+              </div>
+              <div class="auth-form-group">
+                <label class="auth-label" for="emp-reg-phone">Phone Number <span class="required">*</span></label>
+                <input class="auth-input" type="tel" id="emp-reg-phone" name="phone" placeholder="+00 000 000 0000" required autocomplete="tel" />
+                <span class="input-error-msg">Please enter a valid phone number.</span>
+              </div>
+              <div class="auth-form-group">
+                <label class="auth-label" for="emp-reg-pwd">Password <span class="required">*</span></label>
+                <div class="password-wrapper">
+                  <input class="auth-input" type="password" id="emp-reg-pwd" name="password" placeholder="Create password" required autocomplete="new-password" />
+                  <button type="button" class="password-toggle" aria-label="Show password"></button>
+                </div>
+                <span class="input-error-msg">Password is required.</span>
+              </div>
+              <div class="auth-form-group">
+                <label class="auth-label" for="emp-reg-confirm">Confirm Password <span class="required">*</span></label>
+                <div class="password-wrapper">
+                  <input class="auth-input" type="password" id="emp-reg-confirm" name="confirm_password" placeholder="Repeat password" required autocomplete="new-password" />
+                  <button type="button" class="password-toggle" aria-label="Show password"></button>
+                </div>
+                <span class="input-error-msg">Passwords must match.</span>
+              </div>
+              <div class="auth-checkbox-group">
+                <input type="checkbox" id="emp-demo-ack" name="demo_ack" required />
+                <label for="emp-demo-ack">I understand this is a front-end demonstration and no employer account is created without backend integration.</label>
+                <span class="input-error-msg"></span>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg w-full">Register Employer (Demo)</button>
+            </form>
+          </div>
+
+          <div class="auth-disclaimer">
+            <strong>Front-End Demonstration Only:</strong> This Login/Register page demonstrates form validation and UI switching only. No candidate or employer accounts are created, authenticated, or stored without a connected backend.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a href="../index.html" class="nav-logo" style="margin-bottom: var(--space-4);">
+              <div class="nav-logo-mark" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M3 15 Q12 5 21 15" stroke="white" stroke-width="2.4" stroke-linecap="round"/><circle cx="12" cy="8.5" r="1.6" fill="#D4AA62"/></svg>
+              </div>
+              <span class="nav-logo-text">Hire<span>Bridge</span></span>
+            </a>
+            <p class="footer-desc">
+              A professional recruitment and staffing agency dedicated to connecting capable candidates with organisations through structured, people-first hiring support.
+            </p>
+            <div class="footer-social">
+              <a href="#linkedin" class="social-link" aria-label="LinkedIn" data-demo-notice="Placeholder social profile link. Configure with your official HireBridge LinkedIn URL.">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+              <a href="#x" class="social-link" aria-label="X" data-demo-notice="Placeholder social profile link. Configure with your official HireBridge profile URL.">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="footer-heading">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="../index.html" class="footer-link">Home 1 – General</a></li>
+              <li><a href="home2.html" class="footer-link">Home 2 – Solutions</a></li>
+              <li><a href="about.html" class="footer-link">About Us</a></li>
+              <li><a href="blog.html" class="footer-link">Blog &amp; Insights</a></li>
+              <li><a href="pricing.html" class="footer-link">Pricing</a></li>
+              <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+              <li><a href="login.html" class="footer-link">Login / Register</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-heading">Services &amp; Portals</h4>
+            <ul class="footer-links">
+              <li><a href="services.html" class="footer-link">All Recruitment Services</a></li>
+              <li><a href="service-details.html?service=permanent" class="footer-link">Permanent Recruitment</a></li>
+              <li><a href="service-details.html?service=temporary" class="footer-link">Temporary Staffing</a></li>
+              <li><a href="service-details.html?service=contract" class="footer-link">Contract Staffing</a></li>
+              <li><a href="service-details.html?service=workforce" class="footer-link">Workforce Solutions</a></li>
+              <li><a href="services.html#candidates" class="footer-link">Candidate Resources</a></li>
+              <li><a href="services.html#employers" class="footer-link">Employer Resources</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-heading">Contact (Editable)</h4>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>[Office Address Placeholder]<br />[City, Postal Code, Country]</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.59 1.21h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>[Phone Placeholder]</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>[Email Placeholder]</span>
+            </div>
+            <div class="footer-newsletter">
+              <h4>Insights Newsletter</h4>
+              <p>Career guidance and recruitment articles.</p>
+              <form class="newsletter-form">
+                <input type="email" class="newsletter-input" placeholder="Enter your email" required aria-label="Email address for newsletter" />
+                <button type="submit" class="btn btn-gold btn-sm">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="container">
+      <div class="footer-bottom">
+        <p class="footer-bottom-text">© HireBridge Recruitment &amp; Staffing. Front-end demonstration interface.</p>
+        <div class="footer-bottom-links">
+          <a href="privacy.html" class="footer-bottom-link">Privacy Policy</a>
+          <a href="terms.html" class="footer-bottom-link">Terms of Use</a>
+          <a href="sitemap.html" class="footer-bottom-link">Sitemap</a>
+          <a href="maintenance.html" class="footer-bottom-link">Maintenance</a>
+          <a href="coming-soon.html" class="footer-bottom-link">Coming Soon</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" type="button" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

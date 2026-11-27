@@ -1,49 +1,128 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="HireBridge connects ambitious professionals with forward-thinking employers. Expert recruitment and staffing solutions for candidates and businesses." />
-  <title>HireBridge – The Right Talent. The Right Opportunity.</title>
+  <meta name="description"
+    content="HireBridge is a professional recruitment and staffing agency connecting talented candidates with employers through permanent recruitment, temporary staffing, contract staffing, and workforce solutions." />
+  <title>HireBridge – General Recruitment &amp; Staffing Consultancy</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
 
-  <!-- ═══════════════════════════════════════════════════
-       NAVBAR
-  ═══════════════════════════════════════════════════ -->
-  <nav id="navbar" class="navbar">
+  <!-- GLOBAL NAVIGATION -->
+  <nav id="navbar" class="navbar" aria-label="Primary navigation">
     <div class="container">
       <div class="nav-inner">
-        <a href="index.html" class="nav-logo">
-          <div class="nav-logo-mark">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3 12 Q12 4 21 12" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-              <path d="M6 12 Q12 7 18 12" stroke="white" stroke-width="2" stroke-linecap="round" fill="none"/>
-              <circle cx="3" cy="12" r="2" fill="white"/>
-              <circle cx="21" cy="12" r="2" fill="white"/>
-              <circle cx="12" cy="8" r="1.5" fill="white"/>
+        <a href="index.html" class="nav-logo" aria-label="HireBridge Home">
+          <div class="nav-logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M3 15 Q12 5 21 15" stroke="white" stroke-width="2.4" stroke-linecap="round" />
+              <path d="M6 15 Q12 9 18 15" stroke="white" stroke-width="1.8" stroke-linecap="round" />
+              <line x1="3" y1="18" x2="21" y2="18" stroke="rgba(255,255,255,0.65)" stroke-width="1.6"
+                stroke-linecap="round" />
+              <circle cx="12" cy="8.5" r="1.6" fill="#D4AA62" />
             </svg>
           </div>
           <span class="nav-logo-text">Hire<span>Bridge</span></span>
         </a>
+
         <ul class="nav-menu">
-          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
-          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-          <li class="nav-item"><a href="services.html#candidates" class="nav-link">For Candidates</a></li>
-          <li class="nav-item"><a href="services.html#employers" class="nav-link">For Employers</a></li>
-          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-          <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
-          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link active" aria-haspopup="true">
+              Home
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </a>
+            <div class="nav-dropdown" role="menu">
+              <a href="index.html" class="nav-dropdown-link" role="menuitem">Home 1 – General Recruitment<small>Overview
+                  for candidates &amp; employers</small></a>
+              <a href="pages/home2.html" class="nav-dropdown-link" role="menuitem">Home 2 – Solutions &amp;
+                Sectors<small>Staffing &amp; configurable industry focus</small></a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="pages/about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item">
+            <a href="pages/services.html" class="nav-link" aria-haspopup="true">
+              Services
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </a>
+            <div class="nav-dropdown" role="menu">
+              <a href="pages/services.html" class="nav-dropdown-link" role="menuitem">All Recruitment
+                Services<small>Complete staffing &amp; workforce portfolio</small></a>
+              <a href="pages/service-details.html?service=permanent" class="nav-dropdown-link" role="menuitem">Permanent
+                Recruitment<small>Structured long-term hiring support</small></a>
+              <a href="pages/service-details.html?service=temporary" class="nav-dropdown-link" role="menuitem">Temporary
+                Staffing<small>Flexible short-term workforce cover</small></a>
+              <a href="pages/service-details.html?service=contract" class="nav-dropdown-link" role="menuitem">Contract
+                Staffing<small>Project-based &amp; fixed-term talent</small></a>
+              <a href="pages/service-details.html?service=workforce" class="nav-dropdown-link" role="menuitem">Workforce
+                Solutions<small>Planning &amp; pipeline coordination</small></a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="pages/services.html#candidates" class="nav-link" aria-haspopup="true">
+              For Candidates
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </a>
+            <div class="nav-dropdown" role="menu">
+              <a href="pages/services.html#candidates" class="nav-dropdown-link" role="menuitem">Candidate
+                Support<small>CV guidance &amp; interview preparation</small></a>
+              <a href="pages/contact.html#candidates" class="nav-dropdown-link" role="menuitem">Submit Career
+                Enquiry<small>Share your profile &amp; resume</small></a>
+              <a href="pages/login.html" class="nav-dropdown-link" role="menuitem">Candidate Sign In
+                (Demo)<small>Authentication interface preview</small></a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="pages/services.html#employers" class="nav-link" aria-haspopup="true">
+              For Employers
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </a>
+            <div class="nav-dropdown" role="menu">
+              <a href="pages/services.html#employers" class="nav-dropdown-link" role="menuitem">Employer
+                Support<small>Tailored sourcing &amp; shortlisting</small></a>
+              <a href="pages/contact.html#employers" class="nav-dropdown-link" role="menuitem">Submit Hiring
+                Enquiry<small>Discuss open roles &amp; staffing needs</small></a>
+              <a href="pages/pricing.html" class="nav-dropdown-link" role="menuitem">Employer Packages<small>Flexible
+                  recruitment solutions</small></a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="pages/blog.html" class="nav-link" aria-haspopup="true">
+              Blog
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </a>
+            <div class="nav-dropdown" role="menu">
+              <a href="pages/blog.html" class="nav-dropdown-link" role="menuitem">Career &amp; Hiring
+                Insights<small>Articles, tips &amp; workplace trends</small></a>
+              <a href="pages/blog-details.html" class="nav-dropdown-link" role="menuitem">Featured Interview
+                Guide<small>Practical interview preparation</small></a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="pages/pricing.html" class="nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="pages/contact.html" class="nav-link">Contact Us</a></li>
         </ul>
+
         <div class="nav-actions">
-          <button class="nav-toggle-btn" data-theme-toggle title="Toggle theme">🌙</button>
-          <button class="nav-toggle-btn" data-dir-toggle title="Toggle direction">RTL</button>
-          <a href="contact.html#employers" class="btn btn-primary btn-sm">Hire Talent</a>
-          <button id="hamburger" class="hamburger" aria-label="Open menu">
+          <button class="nav-toggle-btn" type="button" data-theme-toggle title="Toggle dark/light theme">🌙</button>
+          <button class="nav-toggle-btn" type="button" data-dir-toggle title="Toggle LTR/RTL layout">RTL</button>
+          <a href="pages/contact.html#candidates" class="btn btn-teal btn-sm nav-secondary-cta">Find Opportunities</a>
+          <a href="pages/contact.html#employers" class="btn btn-primary btn-sm">Hire Talent</a>
+          <button id="hamburger" class="hamburger" type="button" aria-label="Open menu" aria-expanded="false">
             <span></span><span></span><span></span>
           </button>
         </div>
@@ -51,522 +130,570 @@
     </div>
   </nav>
 
-  <!-- Mobile Nav -->
+  <!-- MOBILE DRAWER -->
   <div id="mobileNav" class="mobile-nav" aria-hidden="true">
     <div class="mobile-nav-header">
       <a href="index.html" class="nav-logo">
-        <div class="nav-logo-mark">
-          <svg viewBox="0 0 24 24" fill="none">
-            <path d="M3 12 Q12 4 21 12" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-            <path d="M6 12 Q12 7 18 12" stroke="white" stroke-width="2" stroke-linecap="round" fill="none"/>
-            <circle cx="3" cy="12" r="2" fill="white"/>
-            <circle cx="21" cy="12" r="2" fill="white"/>
-          </svg>
-        </div>
+        <div class="nav-logo-mark"><svg viewBox="0 0 24 24" fill="none">
+            <path d="M3 15 Q12 5 21 15" stroke="white" stroke-width="2.4" stroke-linecap="round" />
+            <circle cx="12" cy="8.5" r="1.6" fill="#D4AA62" />
+          </svg></div>
         <span class="nav-logo-text">Hire<span>Bridge</span></span>
       </a>
-      <button id="mobileNavClose" class="mobile-nav-close" aria-label="Close menu">×</button>
+      <button id="mobileNavClose" class="mobile-nav-close" type="button" aria-label="Close menu">×</button>
     </div>
-    <nav class="mobile-nav-menu">
-      <a href="index.html" class="mobile-nav-link">Home</a>
-      <a href="about.html" class="mobile-nav-link">About Us</a>
-      <a href="services.html" class="mobile-nav-link">Services</a>
-      <a href="services.html#candidates" class="mobile-nav-link">For Candidates</a>
-      <a href="services.html#employers" class="mobile-nav-link">For Employers</a>
-      <a href="blog.html" class="mobile-nav-link">Blog</a>
-      <a href="pricing.html" class="mobile-nav-link">Pricing</a>
-      <a href="contact.html" class="mobile-nav-link">Contact Us</a>
+    <nav class="mobile-nav-menu" aria-label="Mobile navigation">
+      <a href="index.html" class="mobile-nav-link">Home 1 – General Recruitment</a>
+      <div class="mobile-nav-sub"><a href="pages/home2.html">Home 2 – Solutions &amp; Sectors</a></div>
+      <a href="pages/about.html" class="mobile-nav-link">About Us</a>
+      <a href="pages/services.html" class="mobile-nav-link">Services</a>
+      <div class="mobile-nav-sub">
+        <a href="pages/service-details.html?service=permanent">Service Details</a>
+        <a href="pages/services.html#candidates">For Candidates</a>
+        <a href="pages/services.html#employers">For Employers</a>
+      </div>
+      <a href="pages/blog.html" class="mobile-nav-link">Blog</a>
+      <a href="pages/pricing.html" class="mobile-nav-link">Pricing</a>
+      <a href="pages/contact.html" class="mobile-nav-link">Contact Us</a>
+      <a href="pages/login.html" class="mobile-nav-link">Login / Register</a>
     </nav>
     <div class="mobile-nav-actions">
-      <a href="contact.html#candidates" class="btn btn-ghost-white w-full text-center">Find Opportunities</a>
-      <a href="contact.html#employers" class="btn btn-primary w-full text-center">Hire Talent</a>
+      <a href="pages/contact.html#candidates" class="btn btn-teal w-full">Find Opportunities</a>
+      <a href="pages/contact.html#employers" class="btn btn-white w-full">Hire Talent</a>
     </div>
   </div>
 
   <main>
 
-    <!-- ═══════════════════════════════════════════════════
-         SECTION 1 – HERO
-    ═══════════════════════════════════════════════════ -->
-    <section class="hero hero--home" aria-labelledby="hero-heading">
+    <!-- SECTION 1: HERO -->
+    <section class="hero" aria-labelledby="hero-heading">
       <div class="hero-bg">
-        <img
-          src="https://images.unsplash.com/photo-1521737604579-1b78f2a6e4a8?w=1200&q=80&fit=crop"
-          alt="Diverse team of professionals collaborating in a modern office"
-          class="hero-bg-img"
-          loading="eager"
-        />
+        <img src="images/candidate-review.jpg"
+          alt="Recruitment consultant meeting with a professional candidate by a sunlit office window"
+          loading="eager" />
         <div class="hero-overlay"></div>
-        <!-- Geometric Bridge SVG Decoration -->
         <div class="hero-geo" aria-hidden="true">
-          <svg viewBox="0 0 900 220" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-            <path d="M0 180 Q225 60 450 160 Q675 260 900 100" stroke="rgba(255,255,255,0.08)" stroke-width="3" fill="none"/>
-            <path d="M0 200 Q225 90 450 180 Q675 275 900 130" stroke="rgba(85,166,232,0.12)" stroke-width="2" fill="none"/>
-            <path d="M0 150 Q200 50 400 140 Q600 230 900 80" stroke="rgba(53,166,154,0.10)" stroke-width="2" fill="none"/>
-            <circle cx="0" cy="180" r="6" fill="rgba(85,166,232,0.3)"/>
-            <circle cx="450" cy="160" r="10" fill="rgba(53,166,154,0.3)"/>
-            <circle cx="900" cy="100" r="6" fill="rgba(85,166,232,0.3)"/>
+          <svg viewBox="0 0 1440 260" fill="none" preserveAspectRatio="none">
+            <path d="M0 240 Q360 70 720 190 Q1080 310 1440 120" stroke="rgba(255,255,255,0.12)" stroke-width="2" />
+            <path d="M0 250 Q380 110 740 215 Q1100 320 1440 155" stroke="rgba(85,166,232,0.16)" stroke-width="1.5" />
+            <path d="M120 260 Q480 130 840 220 Q1140 290 1440 190" stroke="rgba(53,166,154,0.18)" stroke-width="1.5" />
           </svg>
         </div>
       </div>
 
-      <div class="container hero-content reveal">
-        <div class="hero-text">
-          <div class="section-label section-label--light">Premium Recruitment</div>
+      <div class="container hero-content">
+        <div class="reveal">
+          <span class="section-label section-label--gold">Recruitment &amp; Staffing Consultancy</span>
           <h1 id="hero-heading" class="hero-title">
-            The Right Talent.<br/>
-            The Right Opportunity.<br/>
-            <span class="text-teal">The Right Connection.</span>
+            The Right Talent.<br />
+            The Right Opportunity.<br />
+            <span class="text-sky">The Right Connection.</span>
           </h1>
           <p class="hero-subtitle">
-            HireBridge connects ambitious professionals with forward-thinking employers.
-            Whether you're building a team or advancing your career, we provide the expertise
-            and support to make it happen.
+            HireBridge is a dedicated recruitment and staffing partner connecting capable professionals with
+            organisations ready to grow. We bring structure, transparency, and personal attention to every hiring and
+            career journey.
           </p>
           <div class="hero-ctas">
-            <a href="contact.html#candidates" class="btn btn-teal btn-lg">Find Opportunities</a>
-            <a href="contact.html#employers" class="btn btn-white btn-lg">Hire Talent</a>
+            <a href="pages/contact.html#candidates" class="btn btn-teal btn-lg">
+              Find Opportunities
+              <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </a>
+            <a href="pages/contact.html#employers" class="btn btn-white btn-lg">
+              Hire Talent
+            </a>
           </div>
         </div>
 
-        <!-- Floating Metric Card -->
-        <div class="hero-metric-card delay-300">
-          <div class="hero-metric-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22">
-              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-              <circle cx="9" cy="7" r="4"/>
-              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-            </svg>
+        <aside class="hero-focus-card reveal-right delay-200" aria-label="How HireBridge supports every engagement">
+          <div class="hero-focus-header">
+            <span class="hero-focus-eyebrow">The HireBridge Standard</span>
+            <span class="badge badge-white">People-First</span>
           </div>
-          <div class="hero-metric-body">
-            <span class="hero-metric-number"><span data-count="500">0</span>+</span>
-            <span class="hero-metric-label">Placements Supported</span>
+          <div class="hero-focus-list">
+            <div class="hero-focus-item">
+              <div class="hero-focus-dot" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" width="14" height="14">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+              </div>
+              <div>
+                <strong>Permanent &amp; Flexible Staffing</strong>
+                <span>Permanent roles, temporary cover, contract specialists, and tailored workforce support.</span>
+              </div>
+            </div>
+            <div class="hero-focus-item">
+              <div class="hero-focus-dot" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" width="14" height="14">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+              </div>
+              <div>
+                <strong>Structured Evaluation</strong>
+                <span>Requirement-focused talent sourcing, thorough screening, and clear shortlisting.</span>
+              </div>
+            </div>
+            <div class="hero-focus-item">
+              <div class="hero-focus-dot" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" width="14" height="14">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+              </div>
+              <div>
+                <strong>Dedicated Guidance</strong>
+                <span>Honest communication and coordinated interview support for candidates and employers.</span>
+              </div>
+            </div>
           </div>
-          <div class="hero-metric-accent" aria-hidden="true"></div>
-        </div>
-      </div>
-
-      <!-- Scroll cue -->
-      <div class="hero-scroll-cue" aria-hidden="true">
-        <span></span>
+        </aside>
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════════════
-         SECTION 2 – WHO WE ARE
-    ═══════════════════════════════════════════════════ -->
-    <section class="section section--light" aria-labelledby="about-heading">
+    <!-- SECTION 2: WHO WE ARE -->
+    <section class="section section--light" aria-labelledby="who-heading">
       <div class="container">
-        <div class="grid-2 grid-gap-lg align-center">
-
-          <!-- Left: Image with floating badge -->
+        <div class="grid-asymmetric align-center">
           <div class="reveal-left">
-            <div class="img-frame img-frame--rounded">
-              <img
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=80&fit=crop"
-                alt="Professional recruitment interview between recruiter and candidate"
-                class="img-cover"
-                loading="lazy"
-              />
-              <!-- Floating Badge -->
-              <div class="img-badge img-badge--bottom-right">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" aria-hidden="true">
-                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            <div class="img-frame img-frame--tall">
+              <img src="images/interview-consultation.jpg"
+                alt="Recruiter and candidate in a structured consultation with notes and laptop" loading="lazy"
+                data-lightbox />
+              <div class="img-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"
+                  aria-hidden="true">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
                 </svg>
-                <span>People-First Recruitment</span>
+                <span>Meaningful Career &amp; Hiring Connections</span>
               </div>
             </div>
           </div>
 
-          <!-- Right: Text content -->
           <div class="reveal-right">
-            <div class="section-label">Who We Are</div>
-            <h2 id="about-heading" class="section-title">A Recruitment Partner You Can Trust</h2>
+            <span class="section-label">Who We Are</span>
+            <h2 id="who-heading" class="section-title">A Recruitment Partner Built on Trust and Clarity</h2>
             <p class="section-body">
-              HireBridge is a professional recruitment and staffing agency dedicated to creating meaningful
-              connections between talented candidates and the employers who need them. We approach every
-              placement with care, structure, and a commitment to long-term fit.
+              HireBridge bridges the space between ambitious professionals and organisations seeking dependable talent.
+              We believe recruitment works best when every role is understood deeply and every candidate is treated with
+              respect.
             </p>
-            <ul class="feature-list" aria-label="Our key principles">
-              <li class="feature-list-item delay-100">
+            <p class="section-body" style="margin-top: var(--space-4);">
+              Rather than rushing CVs across desks, our consultants combine organized hiring coordination with
+              people-first guidance—helping employers build capable teams and candidates take well-informed career
+              steps.
+            </p>
+            <ul class="feature-list">
+              <li class="feature-list-item">
                 <span class="feature-list-icon feature-list-icon--teal" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
                 </span>
-                <div>
-                  <strong>People-First Approach</strong>
-                  <span> – Every decision is guided by what truly serves candidates and employers.</span>
-                </div>
+                <div><strong>People-First Service:</strong> Attentive support tailored to individual goals and workplace
+                  culture.</div>
               </li>
-              <li class="feature-list-item delay-200">
+              <li class="feature-list-item">
                 <span class="feature-list-icon feature-list-icon--teal" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
                 </span>
-                <div>
-                  <strong>Structured Recruitment Process</strong>
-                  <span> – A clear, methodical framework from brief to placement.</span>
-                </div>
+                <div><strong>Organized Process:</strong> Clear communication from initial requirement briefing through
+                  offer coordination.</div>
               </li>
-              <li class="feature-list-item delay-300">
+              <li class="feature-list-item">
                 <span class="feature-list-icon feature-list-icon--teal" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
                 </span>
-                <div>
-                  <strong>Transparent Communication</strong>
-                  <span> – Open, honest updates throughout the entire recruitment journey.</span>
-                </div>
-              </li>
-              <li class="feature-list-item delay-400">
-                <span class="feature-list-icon feature-list-icon--teal" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg>
-                </span>
-                <div>
-                  <strong>Tailored Talent Sourcing</strong>
-                  <span> – We adapt our approach to meet the specific needs of every role and employer.</span>
-                </div>
+                <div><strong>Recruitment Expertise:</strong> Purposeful sourcing and screening aligned to real role
+                  criteria.</div>
               </li>
             </ul>
-            <a href="about.html" class="btn btn-primary" style="margin-top: var(--space-6);">Learn About Us</a>
+            <div style="margin-top: var(--space-8); display: flex; flex-wrap: wrap; gap: var(--space-4);">
+              <a href="pages/about.html" class="btn btn-primary">
+                More About Us
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
+                </svg>
+              </a>
+              <a href="pages/home2.html" class="btn btn-outline">Explore Industry Solutions</a>
+            </div>
           </div>
-
         </div>
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════════════
-         SECTION 3 – RECRUITMENT SOLUTIONS
-    ═══════════════════════════════════════════════════ -->
-    <section class="section section--white" aria-labelledby="services-heading">
+    <!-- SECTION 3: OUR RECRUITMENT SOLUTIONS -->
+    <section class="section section--white" aria-labelledby="solutions-heading">
       <div class="container">
         <header class="section-header reveal">
-          <div class="section-label">Our Solutions</div>
-          <h2 id="services-heading" class="section-title">Comprehensive Recruitment Services</h2>
+          <span class="section-label">Our Recruitment Solutions</span>
+          <h2 id="solutions-heading" class="section-title">Structured Services for Every Hiring Stage</h2>
           <p class="section-subtitle">
-            From permanent placements to flexible workforce solutions, our services are designed to meet
-            diverse hiring and career needs across industries.
+            Whether you require long-term team members, agile short-term cover, or coordinated talent sourcing, our
+            services adapt to your staffing structure.
           </p>
         </header>
 
-        <div class="grid-3 reveal">
-          <!-- Card 1: Permanent Recruitment -->
-          <article class="service-card delay-100">
-            <div class="service-card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="28" height="28">
-                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
-                <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/>
-                <line x1="12" y1="12" x2="12" y2="16"/>
-                <line x1="10" y1="14" x2="14" y2="14"/>
-              </svg>
+        <div class="solutions-bento">
+          <article class="service-card service-card--featured reveal delay-100">
+            <div class="service-card-top">
+              <div class="service-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="24" height="24">
+                  <rect x="2" y="7" width="20" height="14" rx="2" />
+                  <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+                </svg>
+              </div>
+              <span class="service-card-index">01 · CORE HIRING</span>
             </div>
             <h3 class="service-card-title">Permanent Recruitment</h3>
             <p class="service-card-body">
-              Long-term talent acquisition with structured screening and shortlisting, designed to match
-              the right person to the right role for lasting impact.
+              End-to-end permanent hiring support covering role briefing, targeted candidate sourcing, thorough
+              screening, curated shortlisting, and coordinated interview stages for lasting organisational fit.
             </p>
-            <a href="service-details.html" class="service-card-link" aria-label="Learn about Permanent Recruitment">
-              Learn More
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            <a href="pages/service-details.html?service=permanent" class="service-card-link">
+              Explore Permanent Recruitment
+              <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
             </a>
           </article>
 
-          <!-- Card 2: Temporary Staffing -->
-          <article class="service-card delay-200">
-            <div class="service-card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="28" height="28">
-                <circle cx="12" cy="12" r="10"/>
-                <polyline points="12 6 12 12 16 14"/>
-              </svg>
+          <article class="service-card service-card--featured reveal delay-200">
+            <div class="service-card-top">
+              <div class="service-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="24" height="24">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+              </div>
+              <span class="service-card-index">02 · AGILE COVER</span>
             </div>
             <h3 class="service-card-title">Temporary Staffing</h3>
             <p class="service-card-body">
-              Flexible short-term workforce support for immediate and seasonal needs, ensuring your
-              operations remain productive without long-term commitment.
+              Responsive short-term staffing support to maintain continuity during seasonal peaks, leave cover, or
+              sudden workload increases with pre-screened, dependable professionals.
             </p>
-            <a href="service-details.html" class="service-card-link" aria-label="Learn about Temporary Staffing">
-              Learn More
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            <a href="pages/service-details.html?service=temporary" class="service-card-link">
+              Explore Temporary Staffing
+              <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
             </a>
           </article>
 
-          <!-- Card 3: Contract Staffing -->
-          <article class="service-card delay-300">
-            <div class="service-card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="28" height="28">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                <polyline points="14 2 14 8 20 8"/>
-                <line x1="16" y1="13" x2="8" y2="13"/>
-                <line x1="16" y1="17" x2="8" y2="17"/>
-                <polyline points="10 9 9 9 8 9"/>
-              </svg>
+          <article class="service-card reveal delay-100">
+            <div class="service-card-top">
+              <div class="service-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="24" height="24">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                  <polyline points="14 2 14 8 20 8" />
+                  <line x1="16" y1="13" x2="8" y2="13" />
+                  <line x1="16" y1="17" x2="8" y2="17" />
+                </svg>
+              </div>
+              <span class="service-card-index">03</span>
             </div>
             <h3 class="service-card-title">Contract Staffing</h3>
             <p class="service-card-body">
-              Project-based and contract professionals to meet specific business requirements, providing
-              specialist expertise exactly when and where you need it.
+              Project-focused and fixed-term professionals sourced for defined deliverables, specialist transformations,
+              and interim operational requirements.
             </p>
-            <a href="service-details.html" class="service-card-link" aria-label="Learn about Contract Staffing">
-              Learn More
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            <a href="pages/service-details.html?service=contract" class="service-card-link">
+              View Details
+              <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
             </a>
           </article>
 
-          <!-- Card 4: Workforce Solutions -->
-          <article class="service-card delay-100">
-            <div class="service-card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="28" height="28">
-                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                <circle cx="9" cy="7" r="4"/>
-                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-              </svg>
+          <article class="service-card reveal delay-200">
+            <div class="service-card-top">
+              <div class="service-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="24" height="24">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+              </div>
+              <span class="service-card-index">04</span>
             </div>
             <h3 class="service-card-title">Workforce Solutions</h3>
             <p class="service-card-body">
-              Strategic workforce planning and talent pipeline development to align your human capital
-              with business objectives and future growth plans.
+              Coordinated workforce planning, talent pipeline development, and ongoing recruitment assistance tailored
+              to evolving team demands.
             </p>
-            <a href="service-details.html" class="service-card-link" aria-label="Learn about Workforce Solutions">
-              Learn More
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            <a href="pages/service-details.html?service=workforce" class="service-card-link">
+              View Details
+              <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
             </a>
           </article>
 
-          <!-- Card 5: Talent Sourcing -->
-          <article class="service-card delay-200">
-            <div class="service-card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="28" height="28">
-                <circle cx="11" cy="11" r="8"/>
-                <line x1="21" y1="21" x2="16.65" y2="16.65"/>
-              </svg>
+          <article class="service-card reveal delay-300">
+            <div class="service-card-top">
+              <div class="service-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="24" height="24">
+                  <circle cx="11" cy="11" r="8" />
+                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                </svg>
+              </div>
+              <span class="service-card-index">05</span>
             </div>
             <h3 class="service-card-title">Talent Sourcing</h3>
             <p class="service-card-body">
-              Active and passive candidate identification across relevant industries, leveraging networks
-              and databases to surface the best available talent.
+              Proactive identification of qualified candidates aligned with specific skills, experience markers, and
+              workplace expectations.
             </p>
-            <a href="service-details.html" class="service-card-link" aria-label="Learn about Talent Sourcing">
-              Learn More
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            <a href="pages/service-details.html?service=sourcing" class="service-card-link">
+              View Details
+              <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
             </a>
           </article>
 
-          <!-- Card 6: Recruitment Support -->
-          <article class="service-card delay-300">
-            <div class="service-card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="28" height="28">
-                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-              </svg>
+          <article class="service-card reveal delay-400">
+            <div class="service-card-top">
+              <div class="service-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="24" height="24">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                </svg>
+              </div>
+              <span class="service-card-index">06</span>
             </div>
             <h3 class="service-card-title">Recruitment Support</h3>
             <p class="service-card-body">
-              End-to-end process management from requirements gathering to offer stage, ensuring a
-              seamless experience for both candidates and hiring organisations.
+              Dedicated screening, interview coordination, and transparent process updates supporting hiring teams and
+              applicants from start to offer.
             </p>
-            <a href="service-details.html" class="service-card-link" aria-label="Learn about Recruitment Support">
-              Learn More
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            <a href="pages/service-details.html?service=support" class="service-card-link">
+              View Details
+              <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
             </a>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════════════
-         SECTION 4 – CONNECTING CANDIDATES & EMPLOYERS
-    ═══════════════════════════════════════════════════ -->
-    <section class="dual-panel" aria-label="For Candidates and Employers">
-      <!-- Left: Candidates (Navy) -->
+    <!-- SECTION 4: CONNECTING CANDIDATES & EMPLOYERS -->
+    <section class="dual-panel" aria-label="Connecting Candidates and Employers">
       <div class="dual-panel-side dual-panel-side--navy reveal-left">
         <div class="dual-panel-content">
-          <div class="dual-panel-label">For Candidates</div>
-          <h2 class="dual-panel-heading">Discover Your Next Career Opportunity</h2>
+          <span class="dual-panel-label">For Candidates</span>
+          <h2 class="dual-panel-heading">Discover Opportunities With Personal Support</h2>
           <p class="dual-panel-body">
-            Discover career opportunities matched to your skills and experience. We guide you
-            through the recruitment process with clarity and support every step of the way.
+            Navigating your next career move shouldn't feel uncertain. HireBridge pairs opportunity discovery with
+            attentive candidate support so you present your strengths clearly at every stage.
           </p>
-          <ul class="dual-panel-list" aria-label="Candidate benefits">
+          <ul class="dual-panel-list">
             <li class="dual-panel-list-item">
-              <span aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><polyline points="20 6 9 17 4 12"/></svg>
-              </span>
-              Access curated job opportunities
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" width="13"
+                  height="13">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg></span>
+              Role matching aligned to your skills &amp; goals
             </li>
             <li class="dual-panel-list-item">
-              <span aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><polyline points="20 6 9 17 4 12"/></svg>
-              </span>
-              CV and application guidance
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" width="13"
+                  height="13">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg></span>
+              Practical CV and application guidance
             </li>
             <li class="dual-panel-list-item">
-              <span aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><polyline points="20 6 9 17 4 12"/></svg>
-              </span>
-              Interview preparation support
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" width="13"
+                  height="13">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg></span>
+              Structured interview preparation
             </li>
             <li class="dual-panel-list-item">
-              <span aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><polyline points="20 6 9 17 4 12"/></svg>
-              </span>
-              Regular recruitment updates
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" width="13"
+                  height="13">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg></span>
+              Consistent updates throughout the process
             </li>
           </ul>
-          <a href="contact.html#candidates" class="btn btn-white">Explore Opportunities</a>
+          <div style="display: flex; flex-wrap: wrap; gap: var(--space-3);">
+            <a href="pages/services.html#candidates" class="btn btn-white">Candidate Support</a>
+            <a href="pages/contact.html#candidates" class="btn btn-outline-white">Submit Enquiry</a>
+          </div>
         </div>
       </div>
 
-      <!-- Right: Employers (Teal) -->
       <div class="dual-panel-side dual-panel-side--teal reveal-right">
         <div class="dual-panel-content">
-          <div class="dual-panel-label">For Employers</div>
-          <h2 class="dual-panel-heading">Build Your Ideal Team with Confidence</h2>
+          <span class="dual-panel-label">For Employers</span>
+          <h2 class="dual-panel-heading">Access Organized Recruitment &amp; Staffing</h2>
           <p class="dual-panel-body">
-            Find the right people for your roles with structured recruitment support from
-            requirements to offer stage. We become an extension of your hiring team.
+            From single permanent appointments to flexible project staffing, we partner with employers to understand
+            role requirements thoroughly and present genuinely suitable candidates.
           </p>
-          <ul class="dual-panel-list" aria-label="Employer benefits">
+          <ul class="dual-panel-list">
             <li class="dual-panel-list-item">
-              <span aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><polyline points="20 6 9 17 4 12"/></svg>
-              </span>
-              Tailored talent sourcing
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" width="13"
+                  height="13">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg></span>
+              Requirement consultations &amp; role scoping
             </li>
             <li class="dual-panel-list-item">
-              <span aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><polyline points="20 6 9 17 4 12"/></svg>
-              </span>
-              Thorough candidate screening
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" width="13"
+                  height="13">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg></span>
+              Targeted talent sourcing &amp; candidate screening
             </li>
             <li class="dual-panel-list-item">
-              <span aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><polyline points="20 6 9 17 4 12"/></svg>
-              </span>
-              Shortlist coordination
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" width="13"
+                  height="13">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg></span>
+              Curated shortlist coordination
             </li>
             <li class="dual-panel-list-item">
-              <span aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><polyline points="20 6 9 17 4 12"/></svg>
-              </span>
-              Interview scheduling support
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" width="13"
+                  height="13">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg></span>
+              Streamlined interview scheduling support
             </li>
           </ul>
-          <a href="contact.html#employers" class="btn btn-white">Discuss Your Hiring Needs</a>
+          <div style="display: flex; flex-wrap: wrap; gap: var(--space-3);">
+            <a href="pages/services.html#employers" class="btn btn-white">Employer Support</a>
+            <a href="pages/contact.html#employers" class="btn btn-outline-white">Request Talent</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════════════
-         SECTION 5 – HOW HIREBRIDGE WORKS
-    ═══════════════════════════════════════════════════ -->
+    <!-- SECTION 5: HOW HIREBRIDGE WORKS -->
     <section class="section section--light" aria-labelledby="process-heading">
       <div class="container">
-        <header class="section-header reveal">
-          <div class="section-label">Our Process</div>
-          <h2 id="process-heading" class="section-title">A Structured Approach to Recruitment</h2>
+        <header class="section-header text-center reveal">
+          <span class="section-label">How HireBridge Works</span>
+          <h2 id="process-heading" class="section-title">Five Clear Stages From Brief to Hire</h2>
           <p class="section-subtitle">
-            Our five-step methodology ensures every placement is purposeful, transparent, and built for long-term success.
+            Every engagement follows a disciplined, transparent workflow designed to save time and ensure lasting
+            alignment.
           </p>
         </header>
 
-        <div class="process-timeline reveal">
-          <!-- Step 1 -->
-          <div class="process-step delay-100">
-            <div class="process-step-num" aria-label="Step 1">1</div>
-            <div class="process-step-connector" aria-hidden="true"></div>
+        <div class="process-timeline">
+          <article class="process-step reveal delay-100">
+            <div class="process-step-num" aria-hidden="true">1</div>
             <div class="process-step-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="26" height="26">
-                <circle cx="12" cy="12" r="10"/>
-                <path d="M12 8v4l3 3"/>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
               </svg>
             </div>
             <h3 class="process-step-title">Understand Requirements</h3>
-            <p class="process-step-body">We take time to understand hiring needs or career goals before we begin any search.</p>
-          </div>
+            <p class="process-step-body">Clarify hiring priorities, role expectations, or individual career objectives
+              before searching.</p>
+          </article>
 
-          <!-- Step 2 -->
-          <div class="process-step delay-200">
-            <div class="process-step-num" aria-label="Step 2">2</div>
-            <div class="process-step-connector" aria-hidden="true"></div>
+          <article class="process-step reveal delay-200">
+            <div class="process-step-num" aria-hidden="true">2</div>
             <div class="process-step-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="26" height="26">
-                <circle cx="11" cy="11" r="8"/>
-                <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
               </svg>
             </div>
-            <h3 class="process-step-title">Identify Opportunities</h3>
-            <p class="process-step-body">We source suitable roles or candidates precisely aligned to the brief and requirements.</p>
-          </div>
+            <h3 class="process-step-title">Identify Opportunities or Talent</h3>
+            <p class="process-step-body">Match suitable roles and capable candidates using structured, brief-driven
+              sourcing.</p>
+          </article>
 
-          <!-- Step 3 -->
-          <div class="process-step delay-300">
-            <div class="process-step-num" aria-label="Step 3">3</div>
-            <div class="process-step-connector" aria-hidden="true"></div>
+          <article class="process-step reveal delay-300">
+            <div class="process-step-num" aria-hidden="true">3</div>
             <div class="process-step-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="26" height="26">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                <polyline points="14 2 14 8 20 8"/>
-                <line x1="16" y1="13" x2="8" y2="13"/>
-                <line x1="16" y1="17" x2="8" y2="17"/>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                <path d="M9 11l3 3L22 4" />
+                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
               </svg>
             </div>
             <h3 class="process-step-title">Screen &amp; Shortlist</h3>
-            <p class="process-step-body">Thorough evaluation of candidates against role requirements to identify the best fit.</p>
-          </div>
+            <p class="process-step-body">Assess experience, readiness, and role alignment to present a focused, relevant
+              shortlist.</p>
+          </article>
 
-          <!-- Step 4 -->
-          <div class="process-step delay-400">
-            <div class="process-step-num" aria-label="Step 4">4</div>
-            <div class="process-step-connector" aria-hidden="true"></div>
+          <article class="process-step reveal delay-400">
+            <div class="process-step-num" aria-hidden="true">4</div>
             <div class="process-step-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="26" height="26">
-                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
-                <line x1="16" y1="2" x2="16" y2="6"/>
-                <line x1="8" y1="2" x2="8" y2="6"/>
-                <line x1="3" y1="10" x2="21" y2="10"/>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                <rect x="3" y="4" width="18" height="18" rx="2" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" />
               </svg>
             </div>
             <h3 class="process-step-title">Coordinate Interviews</h3>
-            <p class="process-step-body">We manage scheduling and communication between both parties for a smooth process.</p>
-          </div>
+            <p class="process-step-body">Manage scheduling, briefing notes, and prompt feedback loops between both
+              sides.</p>
+          </article>
 
-          <!-- Step 5 -->
-          <div class="process-step delay-500">
-            <div class="process-step-num" aria-label="Step 5">5</div>
+          <article class="process-step reveal delay-500">
+            <div class="process-step-num" aria-hidden="true">5</div>
             <div class="process-step-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="26" height="26">
-                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                <polyline points="22 4 12 14.01 9 11.01"/>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
               </svg>
             </div>
-            <h3 class="process-step-title">Support the Hire</h3>
-            <p class="process-step-body">From offer stage through to successful placement and beyond, we remain by your side.</p>
-          </div>
+            <h3 class="process-step-title">Support the Hiring Process</h3>
+            <p class="process-step-body">Guide offer discussions and onboarding transitions with steady, reliable
+              follow-through.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════════════
-         SECTION 6 – FINAL CTA
-    ═══════════════════════════════════════════════════ -->
-    <section class="cta-section cta-section--navy" aria-labelledby="cta-heading">
-      <!-- Geometric arc decoration -->
+    <!-- SECTION 6: FINAL SPLIT CTA -->
+    <section class="cta-section cta-section--navy" aria-labelledby="final-cta-heading">
       <div class="cta-geo" aria-hidden="true">
-        <svg viewBox="0 0 1200 300" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-          <path d="M-100 250 Q300 50 600 200 Q900 350 1300 100" stroke="rgba(85,166,232,0.15)" stroke-width="3" fill="none"/>
-          <path d="M-100 300 Q300 100 600 250 Q900 400 1300 150" stroke="rgba(53,166,154,0.12)" stroke-width="2" fill="none"/>
-          <path d="M200 20 Q500 -60 800 60 Q1100 180 1400 20" stroke="rgba(255,255,255,0.05)" stroke-width="4" fill="none"/>
+        <svg viewBox="0 0 1200 320" fill="none" preserveAspectRatio="none">
+          <path d="M-60 280 Q300 40 600 180 Q900 320 1260 90" stroke="rgba(85,166,232,0.16)" stroke-width="2.5" />
+          <path d="M-60 310 Q320 90 620 225 Q920 360 1260 140" stroke="rgba(212,170,98,0.14)" stroke-width="2" />
         </svg>
       </div>
-
-      <div class="container reveal">
-        <div class="cta-inner">
-          <h2 id="cta-heading" class="cta-title">Ready to Take the Next Step?</h2>
+      <div class="container">
+        <div class="cta-inner reveal">
+          <span class="section-label section-label--gold">Start Your Connection</span>
+          <h2 id="final-cta-heading" class="cta-title">Ready to Take the Next Step?</h2>
           <p class="cta-body">
-            Whether you're looking for your next opportunity or searching for exceptional talent,
-            HireBridge is here to help you make the connection that matters.
+            Whether you are exploring your next professional opportunity or looking to hire skilled talent for your
+            organisation, our team is ready to support your goals.
           </p>
           <div class="cta-actions">
-            <a href="contact.html#candidates" class="btn btn-teal btn-lg">Explore Opportunities</a>
-            <a href="contact.html#employers" class="btn btn-gold btn-lg">Discuss Hiring Needs</a>
+            <a href="pages/contact.html#candidates" class="btn btn-teal btn-lg">
+              Explore Opportunities
+              <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </a>
+            <a href="pages/contact.html#employers" class="btn btn-gold btn-lg">Discuss Your Hiring Needs</a>
           </div>
         </div>
       </div>
@@ -574,84 +701,101 @@
 
   </main>
 
-  <!-- ═══════════════════════════════════════════════════
-       FOOTER
-  ═══════════════════════════════════════════════════ -->
+  <!-- GLOBAL FOOTER -->
   <footer class="footer">
     <div class="footer-top">
       <div class="container">
-        <div class="grid-4" style="gap:var(--space-10)">
-          <div class="footer-brand">
-            <a href="index.html" class="nav-logo" style="margin-bottom:var(--space-5);display:inline-flex">
-              <div class="nav-logo-mark">
+        <div class="footer-grid">
+          <div>
+            <a href="index.html" class="nav-logo" style="margin-bottom: var(--space-4);">
+              <div class="nav-logo-mark" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none">
-                  <path d="M3 12 Q12 4 21 12" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-                  <path d="M6 12 Q12 7 18 12" stroke="white" stroke-width="2" stroke-linecap="round" fill="none"/>
-                  <circle cx="3" cy="12" r="2" fill="white"/>
-                  <circle cx="21" cy="12" r="2" fill="white"/>
+                  <path d="M3 15 Q12 5 21 15" stroke="white" stroke-width="2.4" stroke-linecap="round" />
+                  <circle cx="12" cy="8.5" r="1.6" fill="#D4AA62" />
                 </svg>
               </div>
               <span class="nav-logo-text">Hire<span>Bridge</span></span>
             </a>
-            <p class="footer-desc">Connecting talented professionals with exceptional employers. We bridge the gap between ambition and opportunity.</p>
+            <p class="footer-desc">
+              A professional recruitment and staffing agency dedicated to connecting capable candidates with
+              organisations through structured, people-first hiring support.
+            </p>
             <div class="footer-social">
-              <a href="#" class="social-link" aria-label="LinkedIn">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              <a href="#linkedin" class="social-link" aria-label="LinkedIn"
+                data-demo-notice="Placeholder social profile link. Configure with your official HireBridge LinkedIn URL.">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" />
+                  <rect x="2" y="9" width="4" height="12" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
               </a>
-              <a href="#" class="social-link" aria-label="Twitter">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
-              </a>
-              <a href="#" class="social-link" aria-label="Facebook">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-              </a>
-              <a href="#" class="social-link" aria-label="Instagram">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              <a href="#x" class="social-link" aria-label="X"
+                data-demo-notice="Placeholder social profile link. Configure with your official HireBridge profile URL.">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                </svg>
               </a>
             </div>
           </div>
+
           <div>
             <h4 class="footer-heading">Quick Links</h4>
             <ul class="footer-links">
-              <li><a href="index.html" class="footer-link">Home</a></li>
-              <li><a href="about.html" class="footer-link">About Us</a></li>
-              <li><a href="services.html" class="footer-link">Services</a></li>
-              <li><a href="blog.html" class="footer-link">Blog</a></li>
-              <li><a href="pricing.html" class="footer-link">Pricing</a></li>
-              <li><a href="contact.html" class="footer-link">Contact Us</a></li>
-              <li><a href="login.html" class="footer-link">Login / Register</a></li>
+              <li><a href="index.html" class="footer-link">Home 1 – General</a></li>
+              <li><a href="pages/home2.html" class="footer-link">Home 2 – Solutions</a></li>
+              <li><a href="pages/about.html" class="footer-link">About Us</a></li>
+              <li><a href="pages/blog.html" class="footer-link">Blog &amp; Insights</a></li>
+              <li><a href="pages/pricing.html" class="footer-link">Pricing</a></li>
+              <li><a href="pages/contact.html" class="footer-link">Contact Us</a></li>
+              <li><a href="pages/login.html" class="footer-link">Login / Register</a></li>
             </ul>
           </div>
+
           <div>
-            <h4 class="footer-heading">Our Services</h4>
+            <h4 class="footer-heading">Services &amp; Portals</h4>
             <ul class="footer-links">
-              <li><a href="service-details.html" class="footer-link">Permanent Recruitment</a></li>
-              <li><a href="service-details.html" class="footer-link">Temporary Staffing</a></li>
-              <li><a href="service-details.html" class="footer-link">Contract Staffing</a></li>
-              <li><a href="service-details.html" class="footer-link">Workforce Solutions</a></li>
-              <li><a href="service-details.html" class="footer-link">Talent Sourcing</a></li>
-              <li><a href="services.html#candidates" class="footer-link">For Candidates</a></li>
-              <li><a href="services.html#employers" class="footer-link">For Employers</a></li>
+              <li><a href="pages/services.html" class="footer-link">All Recruitment Services</a></li>
+              <li><a href="pages/service-details.html?service=permanent" class="footer-link">Permanent Recruitment</a>
+              </li>
+              <li><a href="pages/service-details.html?service=temporary" class="footer-link">Temporary Staffing</a></li>
+              <li><a href="pages/service-details.html?service=contract" class="footer-link">Contract Staffing</a></li>
+              <li><a href="pages/service-details.html?service=workforce" class="footer-link">Workforce Solutions</a>
+              </li>
+              <li><a href="pages/services.html#candidates" class="footer-link">Candidate Resources</a></li>
+              <li><a href="pages/services.html#employers" class="footer-link">Employer Resources</a></li>
             </ul>
           </div>
+
           <div>
-            <h4 class="footer-heading">Contact</h4>
+            <h4 class="footer-heading">Contact (Editable)</h4>
             <div class="footer-contact-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              <span>Your Office Address<br>City, Country</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              <span>[Office Address Placeholder]<br />[City, Postal Code, Country]</span>
             </div>
             <div class="footer-contact-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.59 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.81a16 16 0 0 0 6.29 6.29l.9-.9a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.72 16.92z"/></svg>
-              <span>+00 000 000 0000</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.59 1.21h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+              <span>[Phone Placeholder]</span>
             </div>
             <div class="footer-contact-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              <span>hello@hirebridge.com</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              <span>[Email Placeholder]</span>
             </div>
-            <div class="footer-newsletter" style="margin-top:var(--space-6)">
-              <h4>Stay Updated</h4>
-              <p>Career insights and hiring news.</p>
+            <div class="footer-newsletter">
+              <h4>Insights Newsletter</h4>
+              <p>Career guidance and recruitment articles.</p>
               <form class="newsletter-form">
-                <input type="email" class="newsletter-input" placeholder="Your email address" required aria-label="Email address for newsletter">
+                <input type="email" class="newsletter-input" placeholder="Enter your email" required
+                  aria-label="Email address for newsletter" />
                 <button type="submit" class="btn btn-gold btn-sm">Subscribe</button>
               </form>
             </div>
@@ -662,22 +806,26 @@
     <div class="footer-divider"></div>
     <div class="container">
       <div class="footer-bottom">
-        <p class="footer-bottom-text">© 2024 HireBridge. All rights reserved. Front-end demonstration only.</p>
+        <p class="footer-bottom-text">© HireBridge Recruitment &amp; Staffing. Front-end demonstration interface.</p>
         <div class="footer-bottom-links">
-          <a href="#" class="footer-bottom-link">Privacy Policy</a>
-          <a href="#" class="footer-bottom-link">Terms of Use</a>
-          <a href="sitemap.html" class="footer-bottom-link">Sitemap</a>
+          <a href="pages/privacy.html" class="footer-bottom-link">Privacy Policy</a>
+          <a href="pages/terms.html" class="footer-bottom-link">Terms of Use</a>
+          <a href="pages/sitemap.html" class="footer-bottom-link">Sitemap</a>
+          <a href="pages/maintenance.html" class="footer-bottom-link">Maintenance</a>
+          <a href="pages/coming-soon.html" class="footer-bottom-link">Coming Soon</a>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- Back to Top & Toast -->
-  <button id="backToTop" class="back-to-top" aria-label="Back to top">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  <button id="backToTop" class="back-to-top" type="button" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15" />
+    </svg>
   </button>
   <div class="toast-container" id="toastContainer"></div>
 
   <script src="js/main.js"></script>
 </body>
+
 </html>
