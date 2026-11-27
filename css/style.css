@@ -451,9 +451,15 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 10px;
   flex-shrink: 0;
   box-shadow: 0 4px 12px rgba(40, 100, 180, 0.25);
+  transition: transform var(--duration-fast) var(--ease), box-shadow var(--duration-fast) var(--ease);
 }
 
-.nav-logo-mark svg { width: 24px; height: 24px; }
+.nav-logo:hover .nav-logo-mark {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(40, 100, 180, 0.34);
+}
+
+.nav-logo-mark svg { width: 26px; height: 26px; display: block; }
 
 .nav-logo-text {
   font-family: var(--font-display);
@@ -490,6 +496,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar.navbar--solid .nav-logo-tagline,
 .navbar.scrolled .nav-logo-tagline { color: var(--text-muted); }
+
+.footer .nav-logo-tagline { color: rgba(255, 255, 255, 0.72); }
 
 .nav-menu { display: flex; align-items: center; gap: 0.12rem; }
 .nav-item { position: relative; }
@@ -2071,6 +2079,10 @@ h1, h2, h3, h4, h5, h6 {
   .cta-form-card-body, .cta-form-card-header, .form-card, .featured-pricing-body, .featured-pricing-header { padding: var(--space-6) var(--space-4); }
   .toast-container { left: var(--space-4); right: var(--space-4); }
   .toast { min-width: 0; max-width: none; }
+}
+
+@media (max-width: 440px) {
+  .nav-logo-tagline { font-size: 0.54rem; letter-spacing: 0.04em; }
 }
 
 @media print {
